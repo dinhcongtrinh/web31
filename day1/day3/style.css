@@ -1,0 +1,21 @@
+.box{
+    background-color: aquamarine; width: 200px;
+    height: 200px;
+    padding: 10px 10px 20px 30px;
+    border: 10px solid cornflowerblue;
+    margin-bottom: red; height: 500px;
+    border-radius: 10px;
+    display: inline-block
+}
+
+span{
+    display: block;
+     background-color: aquamarine; width: 200px;
+    height: 200px;
+    padding: 10px 10px 20px 30px;
+    border: 10px solid cornflowerblue;
+    margin-bottom: red; height: 500px;
+    border-radius: 10px;
+    display: inline-block;
+    
+}

@@ -1,0 +1,16 @@
+.hed{
+    color: rgb(42, 165, 149);
+    background-color: rgb(143, 185, 188) ; text-align: center;
+
+    
+    text-decoration: solid 4px rgb(42, 165, 149);
+    text-shadow: 4px 4px red;
+
+}.hed:hover{
+    color: blue;
+
+}
+.hed{ 
+    width: 50%; height: 500px;
+    margin: auto;
+}
