@@ -1,0 +1,17 @@
+.flex-contener{
+    display: flex;
+    flex-direction: ;
+    /* can chinh item theo truc doc croos*/
+    justify-content: flex-start;
+    align-items: ;
+    /* cho phep cac muc xuong dong khi vuot qua comntener lai dong*/
+    flex-wrap:nowrap ;
+    /* can chinh dong trong contenner*/
+    align-content: ;
+    /* dat khoang cah giua moi item*/
+    gap: 20px; /* dat cac kich thuoc bawng nhau*/
+    
+}
+.flex-item{
+    background-color: aqua; width: 100px; height: 100px;
+}
