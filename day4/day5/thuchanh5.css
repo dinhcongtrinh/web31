@@ -1,0 +1,27 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+.box.static{ background-color: chartreuse; 
+    background-color: aqua;
+}
+.box.relative{
+    width: 200px;height: 200px;
+    background-color: blue; padding-top: 100px;
+}
+.box.static{
+    background-color: brown;
+    padding-left: 
+}
+.box.absulute.overlay{
+    display: none; top: 0;
+    left: 0; bottom: 0; right: 0;
+}
+.box.fiexd{
+    background-color: chartreuse;
+    /* posison- fiexd giong voi psosison absuluson cung anh hing toi phan tu xung qunh */
+  /*  no can chinh theo kung trinh duyet*/
+    /* cung cap dung 4 thoc tinh top f butoon r- tao lop phu man hinh */
+    /* sticky de hoat dong can co kich thuoc cuj the */
+    /* cho phep 

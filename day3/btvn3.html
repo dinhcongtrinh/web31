@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tìm hiểu về Flexbox trong CSS
+</h1>
+<h2>Flexbox là gì?</h2>
+<p>Flexbox(Flexible box) là một module của CSS giúp bạn dễ thở hơn trong việc chia bố trí, căn chỉnh và phân chia các khoảng trống của các items trong một container, đặc biệt là trong những trường hợp không biết trước về kích thước container hoặc kích thước container có thể thay đổi.
+</p>
+<p>Flexbox(Flexible box) là một module của CSS giúp bạn dễ thở hơn trong việc chia bố trí, căn chỉnh và phân chia các khoảng trống của các items trong một container, đặc biệt là trong những trường hợp không biết trước về kích thước container hoặc kích thước container có thể thay đổi.
+</p>
+<img src="https://tuduydongian.com/images/flex-box/flex-box.png" alt="">
+
+    <p>Phía trên là minh hoạ về flexbox layout với container là phần có background màu hồng chứa các item có background màu xanh.</p>
+<h2>Các thuộc tính của container:</h2>
+<p>display: flex;</p>
+<p>Container được hiểu nôm na là vật chứa hay phần tử cha và có chứa các phần tử ở phía trong. Container được định nghĩa bằng thuộc tính display: flex;.</p>
+ 
+<div stytle="width: 80%; height: 350px; blackgound-colour: black;">
+    <table>
+        
+            <ol>.container{  </ol>
+            <p>display: flex;</p>
+            <p>}</p>
+        
+    </table>
+    </div>
+    <h2>flex-direction: row | row-reverse | column | column-reverse;</h2>
+    <p>row(mặc định): Hiển thị các item từ trái qua phải.
+</p>
+<p>row-reverse: Hiển thị các item theo thứ tự từ phải qua trái.
+</p>
+<p>column: Hiển thị tất cả item từ trên xuống dưới.
+</p>
+<p>column-reverse: Hiển thị tất cả item từ dưới lên trên.
+
+</p>
+<img src="https://tuduydongian.com/images/flex-box/flex-direction.png" alt="">
+<p>Vâỵ để căn chỉnh vị trí hiển thị các item trong flex chúng ta dùng gì? Flex cho chúng ta thuộc tính justify-content để có thể điều chỉnh không gian trống còn lại trong flex
+
+
+    <li>flex-start: Các item được sắp xếp theo hướng bắt đầu
+</li>
+    
+    <li>flex-end: Các item được sắp xếp theo hướng kết thúc
+</li>
+    <li>center: Các item được căn giữa
+</li>
+    <li>space-between: Các item được phân bổ để trong flex, mục đầu tiên sẽ ở vị trí bắt đầu và mục cuối cùng sẽ ở vị trí kết thúc
+</li>
+    <li>space-around: Các item được phân bố đều nhau trong container với khoảng cách là bằng nhau
+</li>
+<li>space-evenly: Các item được phân phối sao cho khoảng cách giữa 2 item bất kỳ là bằng nhau Nhìn hình sau để có trực quan dễ hơn 
+</li>
+
+<img src="https://images.viblo.asia/8cc9ccc8-5417-44d3-8d55-f08105a51350.png" alt="">
+<p>Như vậy chúng ta đã cùng nhau tìm hiểu về flex container và một số thuộc tính cơ bản. Tiếp theo chúng ta sẽ cùng nhau tìm hiểu về flex item và thuộc tính của nó.
+
+</p>
+<h2>Flex items và thuộc tính của nó
+</h2>
+<p>Mặc định các item sẽ được sắp xếp bắt đầu từ trái qua phải và từ trên xuống dưới. Tuy nhiên chúng ta cũng có thể thay đổi vị trí của các item thông qua thuộc tính order ví dụ:</p>
+
+<h2>flex-grow
+</h2>
+<p>Nếu tất cả các item có flex-grow được đặt là 1 thì khoảng trống còn lại sẽ được chia đều cho tất cả các item. Nếu một trong số item là 2 thì khoảng trống đó sẽ chiếm gấp đôi so với các khoảng trống của các item còn lại
+</p>
+<p>.item {</p>
+    <p>  flex-grow: <number>; /* default 0 */
+</p>
+<p>}</p>
+<img src="https://images.viblo.asia/724c15ed-9d88-4475-801b-f52be5738a5a.png" alt="">
+<p>.item {</p>
+<p>  flex-shrink: <number>; /* default 1 */
+</p>
+<p>}</p>
+<p>flex-basis</p>
+<p>Sử dụng nếu bạn muốn gán một kích thước nhất định cho item, có thể dùng giá trị tuyệt đối hay tương đối (phụ thuộc kích thước của container)
+</p>
+<p>.item {</p>
+      <p>flex-basis: <length> | auto; /* default auto */</p>
+        <p>}
+</p>
+<p>Để tìm hiểu sau hơn về tất cả các thuộc tính của flexbox các bạn vào đây đọc nha</p>
+
+<h1>Kết luận</h1>
+<p>Như vậy ở bài này mình và các bạn đã cùng nhau tìm hiểu về flexbox. Có thể nói thì flexbox cũng dễ sử dụng đó chứ nhỉ. Tuy nhiên, theo lời khuyên từ Mozilla thì chúng ta sử dụng Flexbox để thiết lập bố cục trong phạm vi nhỏ (ví dụ như những khung trong website) và khi thiết lập bố cục ở phạm vi lớn hơn (như chia cột website) thì vẫn nên sử dụng kiểu thông thường là dàn trang theo dạng lưới (grid layout). Cảm ơn các bạn đã theo dõi
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
