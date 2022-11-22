@@ -1,0 +1,39 @@
+
+:root {
+ --primary-color: blue;
+ --secondary-color: green;
+ 
+}
+
+
+.box {
+    height: 100px; width: 80%; background-color: blue;
+    background-image: linear-gradient(0deg); transform-origin: 50px 50px 50px;
+    transform: rotate(0deg) scale(1);
+    transition: background-color(0.075, 0.82, 0.165, 1);
+
+}
+img{
+    rotate: 30deg 38deg 40deg;
+}
+/* trnsision ket hop cac bo chon : hover ,  focus
+transison nen tuong dat tren cac bo chon thong thuong
+vi du .box */
+.box:hover {
+    background: rgb(232, 176, 55);
+
+}
+ @keyframes scale {
+    from,
+       {
+        width: 0px; height: 0; rolate: 0deg
+        opacity:0,4
+    }
+       to 50% { width: 300px;
+        height: 300px;
+    }
+}
+img {
+    animation: scale 2s ease-in 0s infinite;
+
+}
