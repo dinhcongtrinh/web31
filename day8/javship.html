@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java ship</title>
+    <link rel="stylesheet" href="javaship.css">
+    <style>
+    .khoi {
+        width: 800px; height: 850px; background-color: burlywood;
+    }
+    </style>
+</head>
+<body>
+
+
+<h1> I . Gioi thieu ve ngon ngu java ship</h1>
+<p>JavaScript là ngôn ngữ lập trình phổ biến dùng để tạo ra các trang web tương tác. Được tích hợp và nhúng vào HTML giúp website trở nên sống động hơn. JavaScript đóng vai trò như một phần của trang web, thực thi cho phép Client-Side Script từ phía người dùng cũng như phía máy chủ (Nodejs) tạo ra các trang web động.</p>
+<p>JavaScript là một ngôn ngữ lập trình thông dịch với khả năng hướng đến đối tượng. Là một trong 3 ngôn ngữ chính trong lập trình web và có mối liên hệ lẫn nhau để xây dựng một website sống động, chuyên nghiệp, bạn có thể nhìn tổng quan như sau:</p>
+ <ul>
+    <li>
+        HTML: Cung cấp cấu trúc cơ bản, hỗ trợ trong việc xây dựng layout, thêm nội dung dễ dàng trên website.
+    </li>
+    <li> Được sử dụng để kiểm soát và hỗ trợ việc định dạng thiết kế, bố cục, style, màu sắc,…
+</li>
+    <li>JavaScript: Tạo nên những nội dung “động” trên website.
+</li>
+    
+ </ul>
+
+ <h1>II . Các chương trình JavaScript có thể được chèn vào bất kỳ phần nào của tài liệu HTML với sự trợ giúp của thẻ /*script*/
+  </h1>
+ <h2>vi du</h2>
+  
+    <p>
+      Cafedev.vn - Kênh thông tin IT hàng đầu Việt Nam
+@author cafedevn                                    <br>
+Contact: cafedevn@gmail.com                   <br>
+Fanpage: https://www.facebook.com/cafedevn                    <br>
+Twitter: https://twitter.com/CafedeVn                      <br>
+</p>
+
+    <p>Bạn có thể chạy ví dụ bằng cách nhấp vào copy code trên cho vào lịnk sau và nhấn nút run.(Hầu hêt mọi bài tập hay code sau này bạn có thể vào link trên để chạy code Javascript cho nó nhanh)</p>
+<p>Các scriptthẻ chứa code JavaScript được tự động thực hiện khi trình duyệt xử lý thẻ. </p>
+
+
+<h1>2. Các đánh dấu hiện đại hơn(Modern markup)</h1>
+
+<p>
+    Các thẻ script có một vài thuộc tính ít được sử dụng hiện nay nhưng vẫn có thể được tìm thấy trong code cũ:
+</p>
+<p>Các typethuộc tính:script type=…/script</p>
+<p>Tiêu chuẩn HTML cũ, HTML4, yêu cầu một tập lệnh phải có một type. Thông thường nó là type="text/javascript". Nó không còn cần thiết nữa. Ngoài ra, chuẩn HTML hiện đại đã thay đổi hoàn toàn ý nghĩa của thuộc tính này. Bây giờ, nó có thể được sử dụng cho các mô-đun JavaScript. Nhưng đó là một chủ đề nâng cao, chúng ta sẽ nói về các mô-đun trong một phần khác của hướng dẫn.</p>
+<h2>Các thuộc tính language:cript language=…/script</h2>
+<p>Thuộc tính này có nghĩa là để hiển thị ngôn ngữ của kịch bản(script). Thuộc tính này không còn có ý nghĩa vì JavaScript là ngôn ngữ mặc định, do đó không cần phải sử dụng nó</p>
+<h2>Bình luận(comment) trước và sau kịch bản(script).</h2>
+<p>Trong những cuốn sách và hướng dẫn thực sự cổ xưa, bạn có thể tìm thấy những comments bên trong các thẻ script, như thế này:
+
+</p>
+<p>Thủ thuật này không được sử dụng trong JavaScript hiện đại. Những comments này ẩn khỏi code JavaScript khi các trình duyệt cũ không biết cách xử lý thẻ script. Vì các trình duyệt được phát hành trong 15 năm qua không có vấn đề này, nên việc comments này có thể giúp bạn xác định code này thực sự cũ.</p>
+<h1>3. Tạo các file Kịch bản ở bên ngoài</h1>
+<p>Nếu chúng ta có nhiều code JavaScript, chúng ta có thể đặt nó vào một tệp riêng.
+
+Các tập tin script được đính kèm với HTML với srcthuộc tính:</p>
+<p>Nếu chúng ta có nhiều code JavaScript, chúng ta có thể đặt nó vào một tệp riêng.
+
+Các tập tin script được đính kèm với HTML với srcthuộc tính:</p>
+
+<p>Để đính kèm một số tập lệnh, sử dụng nhiều thẻ:</p>
+<p>Xin lưu ý: Theo quy định, chỉ các tập lệnh đơn giản nhất được đưa vào HTML. Những cái phức tạp hơn nằm trong các tập tin riêng biệt. Lợi ích của một tệp riêng là trình duyệt sẽ tải xuống và lưu trữ vào bộ đệm(cache) .
+
+Các trang khác tham chiếu cùng một tập lệnh sẽ lấy nó từ bộ đệm thay vì tải xuống, vì vậy tệp thực sự chỉ được tải xuống một lần.
+
+Điều đó làm giảm lưu lượng và làm cho các trang nhanh hơn.
+
+Nếu đặt src, nội dung tập lệnh sẽ bị bỏ qua.</p>
+<p>Một thẻ script duy nhất không thể có cả srcthuộc tính và code bên trong.
+
+Điều này sẽ không hoạt động:</p>
+<p>Một thẻ script duy nhất không thể có cả srcthuộc tính và code bên trong.
+
+Điều này sẽ không hoạt động:</p>
+<h1>4. Tóm lược
+</h1>
+<ul>
+    <li>Chúng ta có thể sử dụng thẻscript để thêm code JavaScript vào một trang.
+</li>
+    <li>Các thuộc tính typevà languagekhông bắt buộc.
+</li>
+    <li>Một tập lệnh trong một tập tin từ bên ngoài có thể được chèn vào script src="path/to/script.js"/script.
+
+</li>
+</ul>
+<p>Có nhiều hơn nữa để tìm hiểu về các tập lệnh trên trình duyệt và sự tương tác của chúng với trang web. Nhưng hãy nhớ rằng phần này của hướng dẫn được dành cho ngôn ngữ JavaScript, vì vậy chúng ta không nên lạc hướng bản thân với các triển khai dành riêng cho trình duyệt. Chúng ta sẽ sử dụng trình duyệt như một cách để chạy JavaScript, rất thuận tiện cho việc học trực tuyến.</p>
+
+
+
+</body>
+</html>

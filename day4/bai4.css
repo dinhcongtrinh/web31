@@ -17,11 +17,12 @@
   
   
 }
-.phython, img,flex {
-    width: 225px; 
-    
-  
+.python,img,flex {
+  width: 225px;
 }
+
+  
+
 .phython {
   background-color: beige; height: 250px;
   width: 225px;
@@ -40,4 +41,7 @@ flex-direction: column;
   display: flex;
   justify-content: space-around;
   
+}
+.python,img,flex {
+  width: 225px;
 }
