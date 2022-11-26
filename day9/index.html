@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaship</title>
+    <style>
+        .box {
+            width: 90%;
+            margin-left: 70px;
+        }
+       #hoc {
+            margin-left: 40%;
+            color: blue;
+        }
+    </style>
+   
+</head>
+<body>
+<script src="./hello-word.js"></script>
+
+
+
+<div class="box">
+    <h1 id="hoc">bai hoc 2 javaship</h1>
+     <h1> 1 . Cấu trúc điều khiển là gì? </h1>
+    <p>Cấu trúc điều khiển là một khối code quyết định dẫn đường để thực thi chương trình tùy thuộc vào giá trị của điều kiện đặt ra. Bạn có thể hiểu cấu trúc điều khiển đơn giản là: Tuần tự thực thi code theo thứ tự được viết. Quyết định thực hiện theo điều kiện nào đó</p>
+    <p>điều khiển trong lập trình là lựa chọn những câu lệnh nào sẽ thực hiện tiếp theo câu lệnh vừa thực thi. Cấu trúc điều khiển (Câu lệnh điều khiển) cho phép một lập trình viên xác định thứ tự thực thi các lệnh trong mỗi chương trình, thể hiện qua việc:</p>    
+</p>
+     <h1> 2 cau lenh dieu kien elise</h1>
+     <p>sử dụng để kiểm tra một biểu thức điều kiện nào đó có đúng hay không, nếu đúng thì thực thi những câu lệnh bên trong khối lệnh if và ngược lại nếu sai thì nó sẽ bỏ qua những câu lệnh đó. Cùng tìm hiểu chi tiết về câu lệnh này nhé!</p>
+     <h2>Lệnh If – else</h2>
+     <p>Các lệnh điều kiện được sử dụng để thực hiện các hành động khác nhau căn cứ vào các điều kiện khác nhau.</p>
+     <h2>Các lệnh điều kiện</h2>
+     <p>Bạn thường rất hay sử dụng viết mã, khi bạn muốn thực hiện các hành động khác nhau đối với các quyết định (điều kiện) khác nhau.</p>
+     <p>Trong JavaScript, chúng ta có những lệnh điều kiện sau đây:</p>
+     <ul>
+     <li>Sử dụng if để xác định một khối mã được thực thi, nếu một biểu thức điều kiện được đánh giá là true</li>
+     <li>Sử dụng else để xác định một khối mã được thực thi, nếu điều kiện được chỉ ra trong if là sai
+</li>
+     <li>Sử dụng else if nhằm xác định một điều kiện mới để kiểm tra, nếu các điều kiện trước đó là sai</li>
+     <li>Sử dụng switch để xác định nhiều khối mã luân phiên được thực thi
+</li>
+    </ul>
+    <h1>Lệnh if</h1>
+    <p>Sử dụng lệnh if để xác định một khối mã JavaScript sẽ được thực thi nếu điều kiện chỉ ra là đúng.</p>
+    <h2>Cú pháp
+    </h2>
+    <p>if (biểu thức điều kiện) {</p>
+        <p>  khối mã được thực thi nếu điều kiện là đúng</p>
+    <p>}</p>
+    <h2>Ví dụ</h2>
+    <p>Chào mừng với câu “Good day” nếu chưa tới 18:00 giờ (Gán cho biến greeting chuỗi “Good day” nếu biến hour nhỏ hơn 18):</p>
+       <p>if (hour < 18) {</p>
+        <p>   greeting = "Good day";</p>
+        <p>} </p>
+        <p>Kết quả của greeting sẽ là:</p>
+          <p>Good day</p>
+     <h2>Phần mở rộng else</h2>
+     <p>Sử dụng phẩn mở rộng else để xác định một khối mã được thực thi nếu điều kiện là sai.</p>
+     <p>if (biểu thức điều kiện) {</p>
+        <p>     khối mã được thực thi nếu điều kiện là đúng</p>
+        <p>} else {</p>
+            <p> khối mã được thực thi nếu điều kiện trên là sai
+}</p>
+<h2>Ví dụ</h2>
+<p>Nếu trước 18 giờ, tạo ra lời chào là “Good day”, nếu không thì lời chào là “Good evening”:</p>
+   <p>if (hour < 18) {</p>
+    <p>if (hour < 18) {</p>
+        <p>} else {</p>
+            <p>  greeting = "Good evening";
+}</p>
+<p>Kết quả của greeting sẽ là:</p>
+<h2>Phần mở rộng else if</h2>
+<p>Sử dụng mở rộng else if để chỉ định một điều kiện mới nếu các điều kiện trước đó là sai.</p>
+<h2>Cú pháp</h2>
+<p>if (biểu thức điều kiện 1) {</p><p>     khối mã được thực thi nếu điều kiện 1 là đúng</p>
+<p>} else if (biểu thức điều kiện 2) { </p>
+    <p>khối mã được thực thi nếu điều kiện 1 là sai và điều kiện 2 là đúng</p>
+<p>} else {</p>
+   <p>  khối mã được thực thi nếu điều kiện 1 và điều kiện 2 đều sai
+} </p> 
+<h2>Ví dụ</h2>
+<p>Nếu thời gian là trước 10:00 giờ , tạo ra một câu chào là “Good morning”, nếu không, nếu thời gian chưa tới 20:00 giờ, câu chào sẽ là “Good day”, nếu không (sau 20:00 giờ) lời chào sẽ là “Good evening”:</p>
+ <p>if (time < 10) { 
+    <p>greeting = "Good morning";</p>
+    <p>} else if (time < 20) {</p>
+        <p>     greeting = "Good day";</p>
+        <p>} else {     </p>
+            <p>    greeting = "Good evening";</p>
+          <p>}</p>  
+          <p>Kết quả của greeting sẽ là:</p>
+          <p>Good day</p>
+
+    <h1>3 Câu lệnh điều kiện switch case</h1>
+  <p>Lênh switch case có công dụng giống như lệnh if else đó là đều dùng để rẻ nhánh chương trình, ứng với mỗi nhánh sẽ có một điều kiện cụ thể và điều kiện đó phải sử dụng toán tử so sánh bằng, còn đối với lệnh if else thì bạn có thể truyền vào một mệnh đề bất kì và Sử dụng nhiều toán tử khác nhau.</p>
+    <h2> 1.Câu lệnh switch case </h2>
+    <p>Câu lệnh switch case cho phép lựa chọn một trong nhiều khối lệnh để thực hiện tùy vào biểu thức được lựa chọn.</p>
+    <p>
+      <p>class Main {</p>
+        <p> public static void main(String[] args) {</p>
+            <p>int number = 44;</p>
+            <p>      switch (number) </p>
+            <p>   case 29:</p>
+            <p>          size = "Small";</p>
+         <p>   break;</p>
+         <p>  case 42:</p>
+         <p>    size = "Medium";</p>
+         <p>   break;</p>
+         <p>          case 44:</p>
+         <p>size = "Large";
+            break;</p>
+            <p>  case 48:</p>
+            <p>            size = "Extra Large";
+            
+            <p>  break;</p>
+            <p>          default:</p>
+            <p>   size = "Unknown";</p>
+            <p>      break;</p>
+            <p>      }</p>
+            <p> System.out.println("Size: " + size);</p>
+            <p>   }</p>
+            <p>}
+            </p>
+            <h2>Kết quả</h2>
+            <p>Size: Large</p>
+            <p>Lệnh break trong switch case</p>
+            <p>Cần sử dụng lệnh break trong mỗi khối lệnh case.</p>
+            <p>...</p>
+            <p>case 29:</p>
+            <p> size = "Small";</p>
+            <p>  break;</p>
+            <p>...</p>
+            <p>Nếu không sử dụng lệnh break thì tất cả những trường hợp sau case thỏa điều kiện sẽ được thực thi.
+
+</p>
+             <p>class Main {
+</p> 
+    <p> public static void main(String[] args) {</p>
+        <p>   int expression = 2;</p>
+        <p>  switch (expression) {</p>
+            <p> case 1:</p>
+            <p>     System.out.println("Case 1");</p>
+         <p>   case 2:</p>
+         <p>    System.out.println("Case 2");</p>
+         <p>  case 3:</p>
+         <p>   System.out.println("Case 3");</p>
+         <p>    default:</p>
+         <p>     System.out.println("Default case");</p>
+         <p>     }</p>
+         <p> }</p>
+         <p>}</p>
+         <p>Kết quả
+</p>
+  <p>case 2</p>
+  <p>case 3</p>
+  <p> default case</p>
+   <h2>Trường hợp default trong switch case</h2>
+   <p>Câu lệnh switch cũng có thêm một trường hợp mặc định (default). Nếu không có case nào thỏa điều kiện thì trường hợp default sẽ được thực thi.</p>
+   <p>class Main {</p>
+    <p> public static void main(String[] args) {</p>
+        <p>       int expression = 9;</p>
+        <p> switch(expression) {</p>
+            <p>     case 2:</p>
+            <p>  System.out.println("Small Size");</p>
+            <p>    break;</p>
+            <p>     case 3:</p>
+            <p> System.out.println("Large Size");</p>
+            <p>   break;</p>
+            <p>default:</p>
+            <p>  System.out.println("Unknown Size");</p>
+            <p>  }</p>
+    <p>  }</p>
+<p>  }</p>
+   
+<h1>4 Vòng lặp for</h1>
+ <h2> Vòng lặp for </h2>
+<ul>
+    <li>Vòng lặp for đơn giản</li>
+    <li>Vòng lặp for cải tiến</li>
+    <li>Vòng lặp for gán nhãn
+</li>
+</ul>
+<h1>Vòng lặp for đơn giản</h1>
+      <p>Vòng lặp for đơn giản giống như trong C/C++. Chúng ta có thể khởi tạo biến, kiểm tra điều kiện và tăng/giảm giá trị của biến.</p>
+<p>Cú pháp:</p>
+<p>for (khoi_tao_bien ; check_dieu_kien ; tang/giam_bien) {  
+    // Khối lệnh được thực thi
+}      </p>
+  <p>
+Ví dụ</p>
+
+
+<p>public class ForExample {</p>
+    <p> public static void main(String[] args) {</p>
+        <p>  for (int i = 1; i <= 10; i++) {</p>
+            <p> System.out.println(i);</p>
+         <p> }</p>
+         <p> }</p>
+         <p> }</p>
+         <h2>Kết quả:</h2>
+         <h1>Vòng lặp for cải tiến</h1>
+         <p>Vòng lặp for cải tiến được sử dụng để lặp mảng(array) hoặc collection trong java. Bạn có thể sử dụng nó dễ dàng, dễ hơn cả vòng lặp for đơn giản. Bởi vì bạn không cần phải tăng hay giảm giá trị của biến rồi check điều kiện, bạn chỉ cần sử dụng ký hiệu hai chấm ":"
+     <h2>Cú pháp:</h2>
+     <p>for (Type var : array) {  </p>
+        <p>  // Khối lệnh được thực thi</p>
+        <p>} </p>
+        <p>Ví dụ</p>
+        <p>public class ForEachExample {
+    public static void main(String[] args) {
+        int arr[] = { 12, 23, 44, 56, 78 };
+        for (int i : arr) {
+            System.out.println(i);
+        }
+    }
+}</p>
+<p>Kết quả:</p>
+<p>12
+23
+44
+56
+78
+</p>
+<h1>Vòng lặp for gán nhãn</h1>
+<p>Chúng ta có để đặt tên cho mỗi vòng lặp for bằng cách gán nhãn trước vòng lặp for. Điều này rất hữu dụng khi chúng ta muốn thoát/tiếp tục(break/continues) chạy vòng lặp for.</p>
+<p>Cú pháp:
+
+</p>
+<p>ten_nhan:
+for (khoi_tao_bien ; check_dieu_kien ; tang/giam_bien) {  
+    // Khối lệnh được thực thi
+}  </p>
+<p>
+    <p>public class LabeledForExample {</p>
+    <p>public static void main(String[] args) {</p>
+        <p>aa: for (int i = 1; i <= 3; i++) {</p>
+            <p>bb: for (int j = 1; j <= 3; j++) {</p>
+                <p>if (i == 2 && j == 2) {</p>
+                    <p>break aa;</p>
+                <p>}</p>
+                <p>System.out.println(i + " " + j);</p>
+            <p>}</p>
+        <p>}</p>
+    <p>}</p>
+<p>}</p>
+   
+</p>
+  <p>Kết quả:</p>
+  <p>1 1
+     1 2
+     1 3
+    2 1</p>
+    <h1> 5 . Vòng lặp while trong java </h1>
+    <p>Vòng lặp while trong java được sử dụng để lặp một phần của chương trình một vài lần. Nếu số lần lặp không được xác định trước thì vòng lặp lặp while được khuyến khích sử dụng trong trường hợp này.
+
+</p>
+<h2>Cú pháp:</h2>
+<p>while(condition) {  </p>
+    <p>  // Khối lệnh được lặp lại cho đến khi condition = False</p>
+ <p>} </p>
+ <p>Ví dụ về vòng lặp while trong java:</p>
+ <p>public class WhileExample1 {</p>
+    <p> public static void main(String[] args) {</p>
+        <p> int i = 1;</p>
+        <p>  while (i <= 10) {</p>
+            <p>System.out.println(i);</p>
+            <p>   i++;</p>
+            <p> }</p>
+         <p> }</p>
+      <p> }</p>
+     <h2>Kết quả:
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>4</p>
+      <p>5</p>
+      <p>6</p>
+      <p>7</p>
+      <p>8</p>
+      <p>9</p>
+      <p>10</p>
+    
+</h2>
+<h2>Vòng lặp while vô tận</h2>
+<p>Nếu bạn để điều kiện lặp là True thì vòng lặp while sẽ chạy đến vô tận... Đến khi bạn stop chương trình đối với mỗi IDE(Eclipse, Netbean...) hoặc bấm Ctrl + C khi chạy bằng command.
+
+Ví dụ về vòng lặp while vô tận trong java:</p>
+<p>public class WhileExample2 {</p>
+    <p> public static void main(String[] args) {</p>
+        <p>  while (true) {</p>
+            <p>   System.out.println("Vòng lặp while vô tận...");</p>
+            <p>  }</p>
+            <p>  }</p>
+            <p>  }</p>
+       <h2>Kết quả:</h2>
+       <Vòng lặp while vô tận...</p>     
+       <Vòng lặp while vô tận...</p>     
+       <Vòng lặp while vô tận...</p>     
+       <Vòng lặp while vô tận...</p>     
+       <Vòng lặp while vô tận...</p>     
+       <p>Ctrl + C</p>
+<h1>6 . Xử lý lỗi với try catch </h1>
+  <p>Try - Catch là cấu trúc không còn xa lạ gì trong các ngôn ngữ lập trình như C#, và trong Javascript cũng cung cấp cho chúng ta cú pháp này để xử lý và xuất ra thông báo lỗi.</p>
+<p>try {</p>
+    <p>    // Quăng lỗi rap </p>
+        <p>throw("Noi dung loi");</p>  
+    <p>} catch (e){</p>/
+    <p>/ Đón nhận lỗi và in ra</p>
+    <p>// Vị trí này chỉ chạy khi ở try có quăng lỗi hoặc ở try </p>
+    <p>// sử dụng sai cú pháp ...</p>
+    <p>console.log(e.message);</p>
+<p>} finally{</p>
+    <p>// Cuối cùng chạy cái này</p>
+    <p>// Luôn luôn chạy sau cùng</p>
+    <p>
+        console.log('End of try cache');
+        }
+    </p>
+    <p>Câu lệnh try chứa một khối try, chứa một hay nhiều câu lệnh ({} phải luôn được sử dụng, cũng cho các câu lệnh đơn), và ít nhất một mệnh đề catch hoặc mệnh đề cuối cùng, hoặc cả hai. Nghĩa là, có ba dạng của câu lệnh try: 1. try...catch 2. try...finally 3. try...catch...finally Mệnh đề catch chứa các câu lệnh xác định phải làm gì nếu một ngoại lệ bị ném trong khối try. Đó là, bạn muốn thử khối để thành công, và nếu nó không thành công và bạn muốn kiểm soát để vượt qua đến khối catch. Nếu bất kỳ câu lệnh nào trong khối try (hoặc trong một hàm được gọi là từ bên trong khối try) sẽ ném ra một ngoại lệ, điều khiển ngay lập tức chuyển sang mệnh đề catch. Nếu không có ngoại lệ được ném vào khối try, mệnh đề catch được bỏ qua. </p>
+
+
+</p>
+<p>Mệnh đề finally thực hiện sau khi khối try và catch clause (s) thực hiện nhưng trước các câu lệnh sau câu try. Nó luôn luôn thực hiện, bất kể một ngoại lệ đã được ném ra hay bị bắt.</p>
+
+<p>Bạn có thể xếp một hoặc nhiều câu lệnh try. Nếu một khối try bên trong không có một điều khoản bắt, mệnh đề catch câu lệnh đóng của câu lệnh đã được nhập.</p>
+<p>Như vậy vị trí finally sẽ luôn luôn được thực thi và sẽ thực thi cuối cùng. Với finally bạn có thể sử dụng hoặc không đều được. Riêng trong catch sẽ có một tham số truyền vào và tham số này sẽ chứa thông tin của lỗi và ta sử dụng biến này để lấy message.</p>
+<p>Ví dụ: Sử dụng biến chưa định nghĩa, nếu bình thường thì chương trình bị dừng nhưng do ta sử dụng try - catch nên chương trình vẫn hoạt động bình thường.</p>
+<p>Nếu chạy đoạn code này lên thì sẽ nhận được thông báo là biến message chưa được định nghĩa (message is not defined). Ví dụ: Sử dụng sai cú pháp nhưng chương trình vẫn chạy</p>
+<p>try {  </p>
+        <p>fadsfas</p>
+        <p>fasdfas</p>
+        <p>fsda</p>
+    <p>} catch (e){</p>
+        <p>console.log(e.message);</p>
+    <p>} finally{</p>
+        <p>console.log('End');</p>
+    }
+    <p>Chương trình này nếu chạy lên thì xuất hiện dòng chữ 'fadsfas is not defined' và đoạn code trong finally vẫn hoạt động bình thường, điều này chứng tỏ chương trình không bị dừng.</p>
+  <h2>2. Viết một lớp xuất thông báo lỗi</h2>
+  <p>Để tiện cho việc quản lý lỗi thì thông thường chúng ta sẽ viết một lớp thông báo lỗi, ví dụ dưới đây dùng để quản lý việc thông báo lỗi cho người dùng.</p>
+  
+    <p>function UserError(){</p>
+     
+    <p>this.throwLogin = function(){</p>
+        <p>
+            throw new Error('Invalid username and password');
+                };
+        </p>
+   <p>
+         
+           this.throwSession = function(){
+   </p>
+        <p>
+            throw new Error('Your request is timeout');
+                };
+        </p>
+     
+    <p>return this;</p>
+<p>}</p>
+<h2>Để sử dụng thì chúng ta làm như sau:</h2>
+ 
+var username = 'thehalfheart';
+<p>var password = 'admin@';</p>
+<p>try {</p>
+    <p>if (username !== 'admin' || password != 'admin@'){</p>
+        <p>var UserError = new UserError();</p>
+        <p>UserError.throwLogin();</p>
+    <p>}</p>
+<p>}catch (e){</p>
+    <p>console.log(e.message);</p>
+<p>}</p>
+  
+
+
+</div>
+</body>
+</html>
