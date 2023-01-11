@@ -11,3 +11,17 @@
     }
 
     greeting("trinh"); //  name= trrinh
+    //
+     if (CSSCondition) {
+
+     }
+     else if (othercondition) {
+
+     } else if ( anothercondition) {
+
+     } else {
+        // kiem tra dieu kien phu thuoc lan nhau
+        if ( condition && othercondition || subcondition) {
+            
+        }
+     }

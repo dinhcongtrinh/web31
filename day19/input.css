@@ -1,0 +1,11 @@
+function checklogin() {
+    if (isLogin) {
+window.location.href = "doom.html"
+   }
+}
+
+
+
+
+
+onclick="Checklogin()"

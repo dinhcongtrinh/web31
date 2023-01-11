@@ -1,0 +1,17 @@
+ 
+  * { 
+      
+  }
+ .container {
+     width: 90px; 
+     left: auto; 
+     right: auto;
+}
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.game-short-description {
+    
+}

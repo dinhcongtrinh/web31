@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            
+            width: 90%;
+            height: max-content;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+  
+    <div class="box">
+        <h1> 1 array nghia la gi</h1>
+        <p> A . Trong JavaScript, một mảng (array) là một biến đặc biệt được sử dụng để lưu trữ các phần tử khác nhau. Mảng có một số thuộc tính tích hợp và phương thức mảng (gọi là array method) mà chúng ta có thể sử dụng để thêm, xóa, lặp hoặc thao với tác dữ liệu theo nhu cầu của mình.</p>
+         <h2>Array trong JavaScript cũng là một loại object. Nhưng array khác object bình thường ở chỗ là:</h2>
+        <ul>
+            <li>Array (mảng) được thiết kế để lưu trữ dữ liệu theo thứ tự.
+            </li>
+            <li>Object (đối tượng) bình thường chỉ là tập hợp của các cặp key-value.
+            </li>
+        </ul>
+       <h1>2. thuoc tinh length</h1>
+        <p>length - Lấy chiều dài của mảng trong JavaScript</p>
+         <p>Thuộc tính length được dùng để lấy chiều dài (số lượng phần tử) của mảng, hoặc thiết lập số lượng phần tử cho mảng.</p>
+         <p>Cú pháp lấy chiều dài của mảng:</p>
+        <p>mảng.length</p>
+        <p>Cú pháp thiết lập số lượng phần tử cho mảng:</p>
+         <p>mảng.length = số lượng phần tử;</p>
+         <p>    <script></script></p>
+         <p>var mobile = ["SamSung","Sony","Apple","HTC","Nokia"];</p>
+         <p>document.getElementById("demo1").innerHTML = mobile;</p>
+         <p>  document.getElementById("demo2").innerHTML = mobile.length;</p>
+         <p>        mobile.length = 15;</p>
+         <p>   document.getElementById("demo3").innerHTML = mobile;</p>
+         <p> </script></p>
+         <h1>3 . Khai báo mảng trong javascript</h1>
+         <p>Chúng ta có hai cách khai báo mảng, thứ nhất là sử dụng từ khóa new Array() và thứ hai là sử dụng cặp dấu ngoặc vuông [].</p>
+        <h1>Khai báo với từ khóa new Array()</h1>
+        <p>Cú pháp: Có thể tạo mảng rỗng hoặc gán giá trị ngay lúc khởi tạo.</p>
+        <p>var name_array = new Array();</p>
+        <p>// Hoặc</p>
+        <p>var name_array = new Array(1,2,3);</p>
+        <h2>Với cách hai thì ta khởi tạo mảng và gán giá trị cho các phần tử luôn ngay lúc khởi tạo.</h2>
+         <h1>Khai báo với cặp dấu ngoặc vuông []</h1>
+         <h2>Cú pháp: Ta cũng có hai cách như trên.</h2>
+         <p>var name_array = [];</p>
+         <p>// Hoặc</p>
+         <p>var name_array = [1,2,3];</p>
+         <h1>4. cu phap : them / sua / xoa gia tri</h1>
+         <p>Các thao tác thêm sửa, xóa các phần tử trong mảng giúp chúng ta có thể sử dụng mảng một cách linh động, phục vụ lưu trữ, xữ lý dễ dàng hơn.</p>
+        <h2>THÊM PHẦN TỬ VÀO MẢNG</h2>
+        <p><?php</p>
+        <p>$list_odd = array(1,3,5,7);</p>
+        <p>// Thêm phần tử giá trị 9 vào mảng có chỉ số key là số nguyên cao nhất.</p>
+        <p>$list_odd[] = 9;</p>
+        <p>?></p>
+        <p>Khi thực hiện cấu trúc dấu ngoặc vuông rỗng [] để thêm phần từ thì phần tử được  thêm vào mảng có chỉ số lớn nhất cộng thêm một giá trị.</p>
+        <h1>Thêm phần tử bởi một key(chỉ mục) xác định trước</h1>
+        <p>$student = array(
+        </p>
+        <p>    '08T1016' => "Phan Văn Cương",
+        </p>
+        <p>    '08T1013' => "Nguyễn Văn Hoàng",
+        </p>
+        <p>    '08T1015' => "Bùi Việt Đức",
+        </p>
+        <p>);</p>
+        <p>// Thêm phần tử có key xác định vào mảng $student
+        </p>
+        <p>$student['08T1019']= "Trần Thị Hằng";
+        </p>
+       <p>?>
+    </p>
+       <h1>XÓA MỘT PHẦN TỬ TRONG MẢNG</h1>
+       <p>Để xóa phần tử của mảng ta sử dụng hàm unset()
+    </p>
+    <p><?php</p>
+    <p>$student = array(
+    </p>
+      <p>    '08T1016' => "Phan Văn Cương",
+    </p>
+    <p>    '08T1013' => "Nguyễn Văn Hoàng",
+    </p>
+    <p>    '08T1015' => "Bùi Việt Đức",
+    </p>
+    <p>);
+    </p>
+    <p>// Xóa Bùi Việt Đức ra khỏi mảng $student
+    </p>
+    <p>unset($student['08T1015']);
+    </p><p>print_r($student);
+    </p>
+    <p>?>
+    </p>
+     <h1> . Xóa tất cả các phần tử của mảng
+    </h1>
+    <p><?php</p>
+    <p>unset($student);
+    </p>
+     <p>?></p>
+     <h1> 5 . duyet cac gia tri trong mang</h1>
+     <p> Sử dụng vòng lặp để duyệt mảng trong javascript</p>
+      <p>Phần này là quan trọng nhất đấy nhé, chúng ta sẽ học cách sử dụng các vòng lặp đã học để duyệt mảng JS. Nhưng trước tiên chúng ta tìm hiểu cách đếm tổng số phần tử trong mảng như sau:</p>
+      <p>Để đếm tổng số phần tử của một mảng chúng ta sẽ dùng thuộc tính length của nó.</p>
+    <p>var t = new Array(1,2,3);</p>
+    <p>alert(t.length); // 3 phần tử</p>
+    <p>Mảng có 3 phần tử thì tức là chỉ mục bắt đầu từ 0 -> 2, vì vậy thì sẽ duyệt các số từ 0 - 2 cho vòng lặp.
+
+    </p>
+    <h1>Duyệt mảng với vòng lặp for
+    </h1>
+    <p>Để lặp mảng với vòng lặp for thì chúng ta phải dùng thuộc tính length như trên để đếm tổng số phần tử. Sau đó, ở mỗi vòng lặp chúng ta sử dụng cú pháp truy xuất đến phần tử của mảng để xử lý.</p>
+    <p>var name_array = [1,2,3];</p>
+     <p>for (var i = 0; i < name_array.length; i++){
+    </p>
+    <p>    document.write(name_array[i]);
+    </p>
+    <p>}</p>
+    <h1>Duyệt mảng với vòng lặp while</h1>
+    <p>Tương tự, để duyệt mảng với vòng lặp while chúng ta sẽ khai báo một biến index để lưu vị trí đang lặp.
+
+    </p>
+    <p>var name_array = [1,2,3];
+    </p>
+    <p>var index = 0;
+    </p>
+    <p>while (index < name_array.length){
+    </p>
+    <p>    document.write(name_array[index]);
+    </p>
+    <p>   index++;</p>
+    <p>}</p>
+    <p>Riêng đối với vòng lặp do while thì không khuyến khích sử dụng để lặp mảng, lý do nó vòng lặp do while luôn luôn lặp ít nhất một lần nên trong trường hợp mảng cần lặp rỗng thì sẽ bị báo lỗi ngay.
+    </p>
+     <p>Như vậy là bạn đã được học cách khai báo mảng cũng như duyệt mảng trong Javascript. Qua bài này bạn phải nắm vững cấu trúc của mảng, hiểu được số chỉ mục của mảng bắt đầu từ 0 và kết thúc là n-1.</p>
+    <h1> 6 . cac phuong phap lam viec voi mang</h1>
+       <h2> co 10 phuong thuc lam viec voi mang mang</h2>
+       
+       <p>1. concat()</p><p>concat() dùng để nối 2 hay nhiều mảng với nhau</p>
+       <p>concat() KHÔNG làm thay đổi mảng ban đầu</p>
+       <p>concat() trả về 1 mảng mới sau khi nối</p>
+
+       <p>var array1 = ['a', 'b', 'c'];</p>
+
+       <p>var array2 = ['d', 'e', 'f'];
+    </p>
+   <p>var array3 = array1.concat(array2);
+</p>
+<p>console.log(array3); // > Array ["a", "b", "c", "d", "e", "f"]
+</p>
+<p>console.log(array1); // > Array ["a", "b", "c"]
+</p>
+<p>console.log(array2); // > Array ["d", "e", "f"]
+
+</p>
+<p>var newArray = oldArray.concat(value1[, value2[, ...[, valueN]]])
+</p>
+<p>// valueN: Các giá trị hay mảng dùng để nối lại với nhau trong mảng mới
+
+</p>
+<p>2. filter()</p>
+<p>filter() dùng để lọc ra các phần tử trong mảng thoả mãn một điều kiện nào đó
+</p>
+<p>filter() trả về 1 mảng mới sau khi lọc
+</p>
+<p>filter() trả về một mảng RỖNG nếu không có phần tử nào thỏa mãn điều kiện
+</p>
+<h1>2. filter()</h1>
+<p>filter() dùng để lọc ra các phần tử trong mảng thoả mãn một điều kiện nào đó</p>
+<ul>
+    <li>filter() KHÔNG làm thay đổi mảng ban đầu
+    </li>
+    <li>filter() trả về 1 mảng mới sau khi lọc
+    </li>
+    <li>filter() trả về một mảng RỖNG nếu không có phần tử nào thỏa mãn điều kiện
+    </li>
+</ul>
+<p>var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+</p>
+<p>var result = words.filter(function(word) {
+</p>
+<p>  return word.length > 6;
+</p>
+<p>});
+</p>
+<p>console.log(result); // > Array ["exuberant", "destruction", "present"]
+</p>
+<p>console.log(words);  // > Array ["spray", "limit", "elite", "exuberant", "destruction", "present"]
+
+</p>
+<h1>3. find()</h1>
+<p>find() cũng dùng để lọc phần tử trong mảng, tuy nhiên nó sẽ trả về giá trị ĐẦU TIÊN tìm thấy ở trong mảng hoặc có thể trả về undefined nếu không tìm thấy</p>
+<p>find() KHÔNG làm thay đổi mảng ban đầu</p>
+<p>var array = [5, 12, 8, 130, 44];</p>
+<p>var found = array.find(function(element)</p>
+<p> return element > 10;</p>
+<p>});</p>
+<p>
+    console.log(found); // > 1</p>
+<p>console.log(array); // > Array [5, 12, 8, 130, 44]
+
+</p>
+<h1>4. forEach()</h1>
+<p>forEach() dùng để duyệt qua từng phần tử của mảng
+
+</p>
+<p>forEach() trả về undefined
+</p>
+<p>var array = ['a', 'b', 'c'];</p>
+<p>array.forEach(function(element) {
+</p>
+<p>  console.log(element);
+</p>
+<p>});</p>
+<p>console.log(array); // > Array ["a", "b", "c"]
+
+</p>
+<h1>5. includes()</h1>
+<p>Đây là method mới trong ES6</p>
+<p>includes() kiểm tra xem phần tử đã cho có tồn tại trong mảng hay không
+
+</p>
+<p>includes() KHÔNG làm thay đổi mảng ban đầu
+</p>
+<p>includes() trả về kiểu Boolean: true nếu tìm thấy hoặc false nếu không tìm thấy
+</p>
+<p>var array = [1, 2, 3];</p>
+<p>console.log(array.includes(2)); // > true
+</p>
+<p>console.log(array);  
+    // > Array [1, 2, 3]
+<h1>6. indexOf()</h1>
+<p>indexOf() dùng để tìm kiếm vị trí của phần tử trong mảng
+
+</p>
+<p>indexOf() KHÔNG làm thay đổi mảng ban đầu
+</p>
+<p>indexOf() trả về giá trị index ĐẦU TIÊN của mảng nếu phần tử tồn tại trong mảng
+</p>
+<p>indexOf() trả về -1 nếu phần tử không tồn tại trong mảng
+</p>
+<h1>7. join()</h1>
+
+<p>join() dùng để tạo ra một chuỗi mới bằng cách nối tất cả các phần tử của mảng, mặc định ngăn cách chúng bởi dấu phẩy hoặc một chuỗi ký tự xác định.
+
+</p>
+<p>join() KHÔNG làm thay đổi mảng ban đầu
+</p>
+<p>join() trả về chính phần tử nếu mảng chỉ có một phần tử
+</p>
+<p>join() trả về một chuỗi rỗng "" nếu arr.length === 0
+</p>
+<p>var elements = ['Fire', 'Air', 'Water'];
+</p>
+<p>console.log(elements.join());    // > "Fire,Air,Water"
+</p>
+<p>console.log(elements.join(''));  // > "FireAirWater"
+</p>
+<p>console.log(elements.join('-')); // > "Fire-Air-Water"
+</p>
+<p>console.log(elements);           // > Array ["Fire", "Air", "Water"]
+
+</p>
+
+<h1>8. map()</h1>
+
+<p>map() giúp tạo ra một mảng mới với các phần tử là kết quả từ việc thực thi một hàm lên TỪNG PHẦN TỬ của mảng ban đầu</p>
+<p>map() KHÔNG làm thay đổi mảng ban đầu
+</p>
+<p>var array = [1, 4, 9, 16];
+</p>
+<p>var map = array.map(function(item) {
+</p>
+<p>  return item * item;
+</p>
+<p>});</p>
+
+<p>console.log(map);   // > Array [1, 16, 81, 256]
+</p>
+
+<p>console.log(array); // > Array [1, 4, 9, 16]
+
+</p>
+<h1>9. pop()</h1>
+<p>pop() dùng để xoá phần tử cuối cùng ra khỏi mảng
+
+</p>
+<p>pop() CÓ làm thay đổi mảng ban đầu
+</p>
+<p>pop() trả về phần tử đã bị xoá ra khỏi mảng
+</p>
+<p>pop() trả về undefined nếu mảng rỗng
+</p>
+<p>const plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato'];
+</p>
+<p>console.log(plants.pop()); // > "tomato"
+</p>
+<p>console.log(plants);       // > Array ["broccoli", "cauliflower", "cabbage", "kale"]
+
+</p>
+<p>Cú pháp</p>
+<p>arr.pop()
+
+</p>
+<h1>10. shift()
+</h1>
+<p>Trái ngược với pop() là shift()
+
+</p>
+<p>shift() dùng để xoá phần tử đầu tiên ra khỏi mảng
+
+</p>
+<p>shift() CÓ làm thay đổi mảng ban đầu
+</p>
+<p>shift() trả về phần tử đã bị xoá ra khỏi mảng
+</p>
+<p>shift() trả về undefined nếu mảng rỗng
+</p>
+<p>const plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato'];
+</p>
+<p>console.log(plants.shift()); // > "broccoli"
+</p>
+<p>console.log(plants);         // > Array ["cauliflower", "cabbage", "kale", "tomato"]
+<p>Cú pháp
+
+;;,</p>
+</p>
+<p>arr.shift()
+
+</p>
+
+
+
+
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+</html>

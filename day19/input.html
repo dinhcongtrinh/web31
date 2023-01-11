@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholader="username" id="username">
+    <input type="password" placeholader="password" id="password">
+    <button >login</button>
+    <script>
+        const  ListAccount = [
+            {
+                username:"admin",
+                password: "admin"
+            },
+            {
+                username:"admin1",
+                password:"admin"
+            },
+            {
+                username:"admin2",
+                password:"admin"
+            }
+        ]
+        let isLogin = !!localStorage.getItem("token")
+
+
+                 
+      
+
+        function login() {
+            let username =document.getElementById("username").value
+            let password =document.getElementById("password").value
+            let checklogin = ListAccount.some(value =>value.username === username && value.password)
+            console.log(checklogin)
+            if (checklogin) {
+                localStorage.setItem("token", username)
+                isLogin=true
+                Checklogin()
+            } else {
+                alert("wrong username or password!")
+            }
+        };
+
+    </script>
+</body>
+</html>
