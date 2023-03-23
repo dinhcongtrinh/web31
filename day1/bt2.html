@@ -1,43 +1,75 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="hoc.css">
-
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
 </head>
 <body>
-    <div class="container">
-       <div class="post">
+   
+            
+        
+     
+            <!-- slider-start -->
+            <div class="slider">
+                <div class="slides">
+                    <!-- slide images start -->
+                    <div class="slide first">
+                        <div class="slide-img">
+                            <img src="../img/vtv,pv.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <div class="txt1">
+                                <h1 id = "h1">Thực phẩm hữu cơ 1</h1>
+                                <p>Tốt cho sức khỏe, tốt cho cuộc sống 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-img">
+                            <img src="../img/vtvpv2.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <div class="txt1">
+                                <h1 id = "h1">Thực phẩm hữu cơ 2</h1>
+                                <p>Tốt cho sức khỏe, tốt cho cuộc sống 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-img">
+                            <img src="../img/hopnhom.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <div class="txt1">
+                                <h1 id = "h1">Thực phẩm hữu cơ 3</h1>
+                                <p>Tốt cho sức khỏe, tốt cho cuộc sống 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide images end -->
 
-       </div>
-
-       <div class="product">
-
-                 <div class="product-imag">
-                <img src="https://fruitshop-techmaster.herokuapp.com/img/shop/bo.jpg" alt="">
-
-                 </div>
-                 <div class="postconten">
-                    <h3 class="post-title">
-                        10 bi kip de phat trien ung dung
-                    </h3>
-                    <div class="post-expest"> hien nay vowi xu the</div>
-
-                 </div>
-
-       </div>
-
-
-
-    </div>
-
-      
-
-
+                    <!-- onclick js -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                    <div class="dotsbox">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                    <!-- /onclick js -->
+                    
+                </div>
+            </div>
+            <!-- slider-end -->
+           
     
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./bt2.js"></script>
 </body>
 </html>
