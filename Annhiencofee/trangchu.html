@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,18 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="product.css">
-    <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="icon" href="../img/logoannhien.jpg" type="image/gif">
+    <link rel="stylesheet" href="../lib/bootstrap/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../lib/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/fontawesome.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/brands.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/solid.css">
+    <script src="https://kit.fontawesome.com/f03f52505a.js" crossorigin="anonymous"></script>
+
+
     <title>Trang chủ</title>
 </head>
 
 <body>
-    <div id="hideContent" class=""></div>
+
     <section class="navbar-left-box">
         <div id="hideContent" class=""></div>
         <div id="navbar-active" class="navbar-left">
@@ -36,12 +42,12 @@
             </div>
             <div class="navbar-left-content">
                 <div class="navbar-left-item">
-                    
-                    <a href="index.html" class="active-nav"><span><i class="fas fa-home"></i></span>Trang chủ</a>
+
+                    <a href="./trangchu.html"  class="active-nav"><span><i class="fas fa-home"></i></span>Trang chủ</a>
                 </div>
                 <div>
                     <div class="navbar-left-item">
-                        
+
                         <a type="button" class="" href="#" id="btnDropdownMenuProduct">
                             <span><i class="fas fa-list"></i></span>
                             Sản Phẩm
@@ -50,19 +56,19 @@
                         </a>
                     </div>
                     <div id="dropdownMenuProduct" class="dropdown-menu-product">
-                        <a href="shirt.html">COFFEE</a>
-                        <a href="pant.html">Trà</a>
-                        <a href="shoes.html">Nước Ép</a>
-                        <a href="accessories.html">Sũa chua đặc biệt</a>
+                        <a href="../baiviet/Espressoo.html">Espressoo</a>
+                        <a href="../baiviet/phattrien.html">Phát triển</a>
+                        <a href="../baiviet/chebiencf.html">Chế biến</a>
+                        <a href="../baiviet/caphe.html">Cà phê</a>
                     </div>
                 </div>
                 <div class="navbar-left-item">
-                    
-                    <a href="blog.html"><span><i class="far fa-newspaper"></i></span>Tin Tức</a>
+
+                    <a href="./tintuc.html"><span><i class="far fa-newspaper"></i></span>Tin Tức</a>
                 </div>
                 <div class="navbar-left-item">
-                    <span><i class="fas fa-map"></i></span>
-                    <a href="contact.html">Liên Hệ</a>
+                    
+                    <a href="./lienhe.html"><span><i class="fas fa-map"></i></span>Liên Hệ</a>
                 </div>
             </div>
         </div>
@@ -141,7 +147,7 @@
                                         <div class="col-sm-9">
                                             <input type="text" required class="form-control" id="inputNameRegis"
                                                 placeholder="Nhập họ tên">
-                                                <span id="errorInputNameRegis" class="error-message"></span>
+                                            <span id="errorInputNameRegis" class="error-message"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -188,32 +194,34 @@
                                         <label for="inputPassword3" class="col-sm-3 col-form-label">Ngày Sinh</label>
                                         <div class="col-sm-3 my-1">
                                             <label class="mr-sm-2 sr-only" for="formSigninSlectDay">Ngày</label>
-                                            <select class="custom-select mr-sm-2" id="formSigninSlectDay" >
+                                            <select class="custom-select mr-sm-2" id="formSigninSlectDay">
                                                 <option selected value="-1">Ngày</option>
 
                                             </select>
-                                            
+
                                         </div>
                                         <div class="col-sm-3 my-1">
                                             <label class="mr-sm-2 sr-only" for="formSigninSlectMonth">Tháng</label>
-                                            <select class="custom-select mr-sm-2" id="formSigninSlectMonth" >
+                                            <select class="custom-select mr-sm-2" id="formSigninSlectMonth">
                                                 <option selected value="-1">Tháng</option>
                                             </select>
                                         </div>
                                         <div class="col-sm-3 my-1">
                                             <label class="mr-sm-2 sr-only" for="formSigninSlectYear">Năm</label>
-                                            <select class="custom-select mr-sm-2" id="formSigninSlectYear" >
+                                            <select class="custom-select mr-sm-2" id="formSigninSlectYear">
                                                 <option selected value="-1">Năm</option>
 
                                             </select>
                                         </div>
                                         <div class="col-sm-3"></div>
-                                        <span id="errorSelectDate" class="error-message col-sm-9" style="padding-left:1rem ;"></span>
+                                        <span id="errorSelectDate" class="error-message col-sm-9"
+                                            style="padding-left:1rem ;"></span>
                                     </div>
                                     <div class="form-group row my-4">
                                         <div class="col-sm-3"></div>
                                         <div class="col-sm-9">
-                                            <button type="submit" id="btnSubmitRegis" class="my-2 btn-login btn w-100">Tạo tài
+                                            <button type="submit" id="btnSubmitRegis"
+                                                class="my-2 btn-login btn w-100">Tạo tài
                                                 khoản</button>
                                         </div>
                                     </div>
@@ -242,14 +250,14 @@
     </section>
 
     <header>
-        <div class="header-wellcome">
+        <!-- <div class="header-wellcome">
 
             <div class="text-header">
-                <p>Wellcome to An Nhiên COFFEE !</p>
+                <p>Wellcome to An Nhiên Coffee !</p>
             </div>
 
-        </div>
-        <div class="" id="navbarFixed">
+        </div> -->
+        <div class="navbarFixed">
             <nav class="navbar navbar-expand-lg navbar-light container">
                 <button id="btn-active-nav" class="navbar-toggler" type="button" data-toggle="collapse" data-target=""
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -257,8 +265,8 @@
                 </button>
                 <a class="navbar-brand" href="index.html"><img src="../img/logoannhien.jpg" alt=""></a>
                 <div class="header-nav-card">
-                    <button class="btn-search" id="btnSearchNav" type="button" style="outline: none"><span><i
-                                class="fa fa-search" aria-hidden="true"></i></span></button>
+                    <button class="btn-search" id="btnSearchNav" type="button"><span><i class="fa fa-search"
+                                aria-hidden="true"></i></span></button>
                     <a href="cart.html"><span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
 
                 </div>
@@ -268,25 +276,24 @@
                 </div>
                 <div class="collapse navbar-collapse main-menu" id="navbarNav">
                     <div class="navbar-nav navbar-menu">
-                        <div class="nav-item"><a href="http://127.0.0.1:5500/Annhiencofee/trangchu.html">Trang chủ</a>
-                        </div>
-                        <div class="nav-item dropdown ">
-                            <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        <div class="nav-item active-nav"><a href="./trangchu.html" class="">Trang chủ</a></div>
+                        <div class="nav-item dropdown">
+                            <a class="dropdown-toggle" href="./sanpham.html" id="navbarDropdownMenuLink" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Sản Phẩm
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="shirt.html">COFFEE</a>
-                                <a class="dropdown-item" href="pant.html">Trà</a>
-                                <a class="dropdown-item" href="shoes.html">Sữa Chua Đặc biệt</a>
-                                <a class="dropdown-item" href="accessories.html">Nước ép</a>
+                        <a href="../baiviet/Espressoo.html">Cà Phê</a>
+                        <a href="../baiviet/phattrien.html">Đồ Ăn</a>
+                        <a href="../baiviet/chebiencf.html">Đồ Uống</a>
+                        <a href="../baiviet/caphe.html">Xuất khẩu</a>
                             </div>
                         </div>
-                        <div class="nav-item"><a href="http://127.0.0.1:5500/Annhiencofee/tintuc.html">Tin Tức</a>
+                        <div class="nav-item"><a href="./tintuc.html">Tin Tức</a>
 
                         </div>
 
-                        <div class="nav-item"><a href="https://dinhcongtrinh.github.io/web31/day8/demo.html">Liên Hệ</a></div>
+                        <div class="nav-item"><a href="./lienhe.html">Liên Hệ</a></div>
                     </div>
                     <ul class="navbar-nav navbar-icon ml-auto">
                         <li class="nav-item">
@@ -308,463 +315,586 @@
         </div>
     </header>
 
-    <!-- button filter  -->
-    <div class="button-filter-box">
-        <button class="btn-active-filter" id="btnActiveFilter"><span><i class="fas fa-filter"></i></span></button>
-    </div>
-
-    <!-- Main cotent -->
-    <main>
-        <div class="container">
-            <div class="banner-current-page box-element">
-                <img src="../img/ca phê chin sai.jpg" alt="">
-                <div class="current-page-box">
-                    <h3 class="title-banner-page">Sản Phẩm</h3>
-                    <div class="current-page-box-link">
-                        <a href="" class="link-previous-page">Trang chủ ></a>
-                        <span class="current-page"> Áo</span>
+    <section class="box-element">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <img src="../img.cf/background.jpeg" class="d-block w-100 banner-img" alt="...">
+                    <div class="slide-content-box">
+                        <h1 class="slide-title">Wellcome to An Nhiên Coffee !</h1>
+                        <p>Chúc quý khách trải nhiệm dịch tốt dịch vụ của chúng tôi ! </p>
+                        <div><a href="../baiviet/chebiencf.html" class="btn-in-slide">Khám Phá</a></div>
                     </div>
                 </div>
+                <div class="carousel-item">
+                    <img src="../img.cf/background1.jpg" class="d-block w-100 banner-img" alt="...">
+                    <div class="slide-content-box">
+                        <h1 class="slide-title">Văn Hóa Coffee !</h1>
+                        <p>Một Nét đẹp văn hóa người Việt Trong đương đại
+                        </p>
+                        <div><a href="" class="btn-in-slide">Thương Hiệu</a></div>
+                    </div>
+                </div>
+               
             </div>
-
-            <div class="row mb-4 search-order-box">
-
-                <div class="filter-search col-lg-3 col-md-4 col-sm-6">
-                    <form action="" class="form-search">
-                        <input type="text" class="form-control" placeholder="Tìm kiếm...">
-                        <button type="submit" class="btn-search-submit"><span><i
-                                    class="fas fa-search"></i></span></button>
-                    </form>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="form-group order-by">
-
-                        <select id="my-select" class="custom-select" name="">
-                            <option>Sắp xếp giá</option>
-                            <option>Từ thấp tới cao</option>
-                            <option>Từ cao tới thấp</option>
-                        </select>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row box-element">
-                <div class="col-lg-3 col-md-4 col-sm-12 filter-box-all" id="optionFilterBox">
-                    <div class="filter-box">
-                        <div class="filter-title">
-                            <h5>Phát triển</h5>
-                            <button class="btn-active-filter-box" style="outline: none;">-</button>
-                        </div>
-                        <ul class="list-cate" id="filterCate">
-                            <li>
-                                <input type="checkbox" class="" />
-                                <label for="">Hợp tác</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" class="" />
-                                <label for="">mở rộng</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" class="" />
-                                <label for="">sản Phẩm</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" class="" />
-                                <label for="">Quản Lý</label>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="filter-box">
-                        <div class="filter-title">
-                            <h5>Mặt Hàng</h5>
-                            <button class="btn-active-filter-box" class="btn" style="outline: none">-</button>
-                        </div>
-                        <ul class="list-cate" id="filterCate">
-                            <li>
-                                <input type="checkbox" class="" />
-                                <label for="">Coffee</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" class="" />
-                                <label for="">Đông Trùng Hạ Thảo </label>
-                            </li>
-                            <li>
-                                <input type="checkbox" class="" />
-                                <label for="">Đồ Ăn </label>
-                            </li>
-                            <li>
-                                <input type="checkbox" class="" />
-                                <label for="">Bánh </label>
-                            </li>
-                            <li>
-                                <input type="checkbox" class="" />
-                                <label for="">Rượu</label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="filter-box">
-                        <div class="filter-title">
-                            <h5>Danh sách cửa hàng</h5>
-                            <button class="btn-active-filter-box" class="btn" style="outline: none">-</button>
-                        </div>
-                        <ul class="list-size-filter" id="filterCate">
-                            <li>
-                                <a href="">An Nhiên Cofee 76 Duy Tân</a>
-                            </li>
-                            <li>
-                                <a href="">An Nhiên Cofee 75 Trung văn</a>
-
-                                
-                            </li>
-                            <li>
-                                <a href="">An Nhiên Cofee </a>
-                            </li>
-                            <li>
-                                <a href="">An Nhiên Cofee</a>
-                            </li>
-                            <li>
-                                <a href="">An Nhiên Cofee</a>
-                            </li>
-                            <li>
-                                <a href="">An Nhiên Cofee</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="filter-box">
-                        <div class="filter-title">
-                            <h5></h5>
-                            <button class="btn-active-filter-box" class="btn" style="outline: none">-</button>
-                        </div>
-                        <ul class="list-cate" id="filterCate">
-                            <li>
-                                <input type="checkbox" class="" />
-                                <label for="">Đỏ</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" class="" />
-                                <label for="">Vàng</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" class="" />
-                                <label for="">Cam</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" class="" />
-                                <label for="">Hồng</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" class="" />
-                                <label for="">Nâu</label>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="col-lg-9 col-md-8 col-sm-12 mb-4">
-                    <div class="row products">
-
-                        <div class="col-lg-4 col-md-6 col-sm-6 item">
-                            <div class="product-item">
-                                <div class="card" style="">
-                                    <div class="card-img">
-                                        <a href="detailProduct.html"><img src="../imgtra/hong trà chanh leo.jpg" class="card-img-top"
-                                                alt="..."></a>
-                                        <div class="add-cart-box">
-                                            <a href="">
-                                                <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                                                THÊM VÀO GIỎ HÀNG
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href="detailProduct.html">
-                                            <h5 class="card-title">Áo Sơ Mi Owen</h5>
-                                        </a>
-                                        <p class="card-text"> <span>550.000 </span>₫</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-sm-6 item">
-                            <div class=" product-item">
-                                <div class="card" style="">
-                                    <div class="card-img">
-                                        <a href="detailProduct.html"><img src="../imgtra/tra sua khoai mon.jpg" class="card-img-top"
-                                                alt="..."></a>
-                                        <div class="add-cart-box">
-                                            <a href="detailProduct.html">
-                                                <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                                                THÊM VÀO GIỎ HÀNG
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href="detailProduct.html">
-                                            <h5 class="card-title">Áo thun nam dài tay Julido</h5>
-                                        </a>
-                                        <p class="card-text"> <span>200.000 </span>₫</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 item">
-                            <div class=" product-item">
-                                <div class="card" style="">
-                                    <div class="card-img">
-                                        <a href=""><img src="../imgtra/olong quế hoa.jpg" class="card-img-top" alt="..."></a>
-                                        <div class="add-cart-box">
-                                            <a href="">
-                                                <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                                                THÊM VÀO GIỎ HÀNG
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href="detailProduct.html">
-                                            <h5 class="card-title">Trà Quế Hoa</h5>
-                                        </a>
-                                        <p class="card-text"> <span>545.000 </span>₫</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-sm-6 item">
-                            <div class="product-item">
-                                <div class="card" style="">
-                                    <div class="card-img">
-                                        <a href=""><img src="../imgtra/olong quế hoa.jpg" class="card-img-top" alt="..."></a>
-                                        <div class="add-cart-box">
-                                            <a href="">
-                                                <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                                                THÊM VÀO GIỎ HÀNG
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href="detailProduct.html">
-                                            <h5 class="card-title">Trà Ô Long Quế Hoa</h5>
-                                        </a>
-                                        <p class="card-text"> <span>45.000 </span>₫</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-sm-6 item">
-                            <div class=" product-item">
-                                <div class="card" style="">
-                                    <div class="card-img">
-                                        <a href=""><img src="../imgtra/tra sua khoai mon.jpg" class="card-img-top" alt="..."></a>
-                                        <div class="add-cart-box">
-                                            <a href="">
-                                                <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                                                THÊM VÀO GIỎ HÀNG
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href=""></a>
-                                        <h5 class="card-title">Trà Sữa Khoai Môn</h5>
-                                        <p class="card-text"> <span>1.500.000 </span>₫</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 item">
-                            <div class=" product-item">
-                                <div class="card" style="">
-                                    <div class="card-img">
-                                        <a href=""><img src="../imgtra/tra-sua-oolong-kem-trung-nuong.jpg" class="card-img-top" alt="..."></a>
-                                        <div class="add-cart-box">
-                                            <a href="">
-                                                <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                                                THÊM VÀO GIỎ HÀNG
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href=""></a>
-                                        <h5 class="card-title">Trà Sữa Kem Trứng Nướng</h5>
-                                        <p class="card-text"> <span>2.000.000 </span>₫</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 item">
-                            <div class=" product-item">
-                                <div class="card" style="">
-                                    <div class="card-img">
-                                        <a href=""><img src="../imgtra/trabuoihongf.jpg" class="card-img-top" alt="..."></a>
-                                        <div class="add-cart-box">
-                                            <a href="">
-                                                <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                                                THÊM VÀO GIỎ HÀNG
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href=""></a>
-                                        <h5 class="card-title">Trà Bưởi Hồng </h5>
-                                        <p class="card-text"> <span>45.000 </span>₫</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 item">
-                            <div class=" product-item">
-                                <div class="card" style="">
-                                    <div class="card-img">
-                                        <a href=""><img src="../img.cf/trà camdao.jpg" class="card-img-top" alt="..."></a>
-                                        <div class="add-cart-box">
-                                            <a href="">
-                                                <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                                                THÊM VÀO GIỎ HÀNG
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href=""></a>
-                                        <h5 class="card-title">Trà Cam Đào</h5>
-                                        <p class="card-text"> <span>45.000 </span>₫</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 item">
-                            <div class=" product-item">
-                                <div class="card" style="">
-                                    <div class="card-img">
-                                        <a href=""><img src="../imgtra/camque nong.jpg" class="card-img-top" alt="..."></a>
-                                        <div class="add-cart-box">
-                                            <a href="">
-                                                <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                                                THÊM VÀO GIỎ HÀNG
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href=""></a>
-                                        <h5 class="card-title">Áo Thun Nam Thể Thao</h5>
-                                        <p class="card-text"> <span>500.000 </span>₫</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 item">
-                            <div class=" product-item">
-                                <div class="card" style="">
-                                    <div class="card-img">
-                                        <a href=""><img src="../imgtra/hong tra kem.png" class="card-img-top" alt="..."></a>
-                                        <div class="add-cart-box">
-                                            <a href="">
-                                                <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                                                THÊM VÀO GIỎ HÀNG
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href=""></a>
-                                        <h5 class="card-title">Hòng trà Kem Trứng </h5>
-                                        <p class="card-text"> <span>150.000 </span>₫</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 item">
-                            <div class=" product-item">
-                                <div class="card" style="">
-                                    <div class="card-img">
-                                        <a href=""><img src="../imgtra/tra sua khoai mon.jpg" class="card-img-top" alt="..."></a>
-                                        <div class="add-cart-box">
-                                            <a href="">
-                                                <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                                                THÊM VÀO GIỎ HÀNG
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href=""></a>
-                                        <h5 class="card-title">Áo Len Collective co</h5>
-                                        <p class="card-text"> <span>350.000 </span>₫</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 item">
-                            <div class=" product-item">
-                                <div class="card" style="">
-                                    <div class="card-img">
-                                        <a href=""><img src="../imgtra/hong tra kem.png" class="card-img-top" alt="..."></a>
-                                        <div class="add-cart-box">
-                                            <a href="">
-                                                <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                                                THÊM VÀO GIỎ HÀNG
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href=""></a>
-                                        <h5 class="card-title">Áo Jeans MIIX Collective co</h5>
-                                        <p class="card-text-sale"><strike>700.000 ₫</strike></p>
-                                        <p class="card-text">350.000 ₫</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pagination-box">
-                            <nav aria-label="Page navigation example">
-                                <ul class="pagination">
-                                    <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Previous">
-                                            <span aria-hidden="true">&laquo;</span>
-                                        </a>
-                                    </li>
-                                    <li class="page-item "><a class="page-link active-pagination" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Next">
-                                            <span aria-hidden="true">&raquo;</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
+    </section>
+
+
+    <main>
+        <div class="container container-main">
+            <div class="row list-category box-element">
+                <div class="col-lg-3 col-md-6 col-sm-6 item-cate">
+                    <div class="about-picture">
+                        <a href="shirt.html"><img class="img-cate" src="../img.sp/robusta-bouside.jpg" alt=""></a>
+                        <a href="shirt.html">
+                            <div class="picture-title">Robusta</div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 item-cate">
+                    <div class="about-picture">
+                        <a href="pant.html"><img class="img-cate" src="../img.sp/abricacf.jpg" alt=""></a>
+                        <a href="pant.html">
+                            <div class="picture-title">Abrica</div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 item-cate">
+                    <div class="about-picture">
+                        <a href="shoes.html"><img class="img-cate" src="../imgespreso/hạtrang.jpg" alt=""></a>
+                        <a href="shoes.html">
+                            <div class="picture-title">Đồ uống Tươi</div>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 item-cate">
+                    <div class="about-picture">
+                        <a href="accessories.html"><img class="img-cate" src="../imgcuahang/khwifi.jpg" alt=""></a>
+                        <a href="accessories.html">
+                            <div class="picture-title">Đồ uống pha sẵn</div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="box-element">
+                <div class="title-box mb-4 row">
+                    <div class="col-lg-3 col-md-4 col-sm-12 title">
+                        <h1>SẢN PHẨM MỚI</h1>
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-sm-12 product-list-cate">
+                        <div>
+                            <a href=""><span><i class=""></i></span> Coffee An Nhiên</a>|
+                            <a href=""><span><i class=""></i></span> Đông trùng hạ Thảo Chế biến thô </a>|
+                            <a href=""><span></span><i class=""></i>Mật Ong Đong Trùng Hạ Thảo</a>|
+                            <a href=""><span><i class=""></i></span> Rượu Đong Trùng Hạ Thảo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel owl-theme" id="owlCarouselProduct">
+                    <div class="item product-item">
+
+                        <div class="card" style="">
+                            <div class="card-img">
+                                <a href=""><img src="../img/background3.jpg" class="card-img-top" alt="..."></a>
+                                <div class="add-cart-box">
+                                    <a href="">
+                                        <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                                        THÊM VÀO GIỎ HÀNG
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href=""></a>
+                                <h5 class="card-title">Mật Ong Đông Trùng Hạ Thảo</h5>
+                                <p class="card-text"> <span>650.000 </span>₫</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="item product-item">
+
+                        <div class="card" style="">
+                            <div class="card-img">
+                                <img src="img/Shoes/shoes1.jpg" class="card-img-top" alt="...">
+                                <div class="add-cart-box">
+                                    <a href="">
+                                        <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                                        THÊM VÀO GIỎ HÀNG
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="">
+                                    <h5 class="card-title">Cà Phê </h5>
+                                </a>
+                                <p class="card-text">28.000 ₫</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item product-item">
+
+                        <div class="card" style="">
+                            <div class="card-img">
+                                <img src="img/Shoes/shoes15.jpg" class="card-img-top" alt="...">
+                                <div class="add-cart-box">
+                                    <a href="">
+                                        <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                                        THÊM VÀO GIỎ HÀNG
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="">
+                                    <h5 class="card-title">Sữa chua Đặc biệt</h5>
+                                </a>
+                                <p class="card-text">59.000 ₫</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item product-item">
+
+                        <div class="card" style="">
+                            <div class="card-img">
+                                <img src="img/Shoes/shoes14.jpg" class="card-img-top" alt="...">
+                                <div class="add-cart-box">
+                                    <a href="">
+                                        <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                                        THÊM VÀO GIỎ HÀNG
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="">
+                                    <h5 class="card-title">Trà</h5>
+                                </a>
+                                <p class="card-text">45.000 ₫</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item product-item">
+
+                        <div class="card" style="">
+                            <div class="card-img">
+                                <img src="img/Shoes/shoes8.jpg" class="card-img-top" alt="...">
+                                <div class="add-cart-box">
+                                    <a href="">
+                                        <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                                        THÊM VÀO GIỎ HÀNG
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="">
+                                    <h5 class="card-title">Sinh tố</h5>
+                                </a>
+                                <p class="card-text">50.000 ₫</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item product-item">
+
+                        <div class="card" style="">
+                            <div class="card-img">
+                                <img src="img/Shoes/shoe4.jpg" class="card-img-top" alt="...">
+                                <div class="add-cart-box">
+                                    <a href="">
+                                        <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                                        THÊM VÀO GIỎ HÀNG
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="">
+                                    <h5 class="card-title">Nước ép</h5>
+                                </a>
+                                <p class="card-text">50.000 ₫</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item product-item">
+
+                        <div class="card" style="">
+                            <div class="card-img">
+                                <img src="img/Shoes/shoes11.jpeg" class="card-img-top" alt="...">
+                                <div class="add-cart-box">
+                                    <a href="">
+                                        <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                                        THÊM VÀO GIỎ HÀNG
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="">
+                                    <h5 class="card-title">Trà Sữa</h5>
+                                </a>
+                                <p class="card-text">45.000 ₫</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="item product-item" itemscope itemtype="abc">
+
+                        <div class="card" style="">
+                            <div class="card-img">
+                                <img src="img/Shoes/shoes13.jpg" class="card-img-top" alt="...">
+                                <div class="add-cart-box">
+                                    <a href="carf">
+                                        <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                                        THÊM VÀO GIỎ HÀNG
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="">
+                                    <h5 class="card-title">Capuchino</h5>
+                                </a>
+                                <!-- <p class="card-text-sale"><strike>35.000 ₫</strike></p> -->
+                                <p class="card-text">300.000 ₫</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="panner-adver box-element">
+                <img src="img/banner-adver.jpg" alt="">
+                <div class="text-adver font-text-2">
+                    <p>Giảm 10% khi tổng hóa đơn <br> trên 200.000 đ</p>
+                </div>
+            </div>
+            <!-- Xu huong -->
+            <div class="box-element">
+                <div class="title-box mb-4 row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 title">
+                        <h1>Sản phẩm bán doanh thu cao nhất</h1>
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-sm-12 product-list-cate">
+                        <div>
+                            <a href=""><span><i class=""></i></span> Cà Phê</a>|
+                            <a href=""><span><i class=""></i></span> Bánh</a>|
+                            <a href=""><span></span><i class=""></i> Trà</a>|
+                            <a href=""><span><i class=""></i></span> Nước ép</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4 products">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 item">
+                        <div class="product-item">
+
+                            <div class="card" style="">
+                                <div class="card-img">
+                                    <img src="img/shirt/shirt7.jpg" class="card-img-top" alt="...">
+                                    <div class="add-cart-box">
+                                        <a href="">
+                                            <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                                            THÊM VÀO GIỎ HÀNG
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="sale"><span>Sale !</span></div>
+                                <div class="new"><span>New !</span></div>
+                                <div class="card-body">
+                                    <a href="">
+                                        <h5 class="card-title">Cà Phê Nâu</h5>
+                                    </a>
+                                    <p class="card-text-sale"><strike>28.000 ₫</strike></p>
+                                    <!-- <p class="card-text">30.000 ₫</p> -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 item">
+                        <div class="product-item">
+
+                            <div class="card" style="">
+                                <div class="card-img">
+                                    <img src="img/shirt/short8.jpg" class="card-img-top" alt="...">
+                                    <div class="add-cart-box">
+                                        <a href="">
+                                            <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                                            THÊM VÀO GIỎ HÀNG
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="">
+                                        <h5 class="card-title">Cà phê đen</h5>
+                                    </a>
+                                    <p class="card-text">28.000 ₫</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 item">
+                        <div class="product-item">
+
+                            <div class="card" style="">
+                                <div class="card-img">
+                                    <img src="img/shirt/shirt.jpg" class="card-img-top" alt="...">
+                                    <div class="add-cart-box">
+                                        <a href="">
+                                            <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                                            THÊM VÀO GIỎ HÀNG
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="">
+                                        <h5 class="card-title">Sữa chua đặc biệt</h5>
+                                    </a>
+                                    <p class="card-text">59.000 ₫</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 item">
+                        <div class="product-item">
+
+                            <div class="card" style="">
+                                <div class="card-img">
+                                    <img src="img/shirt/shirt2.jpg" class="card-img-top" alt="...">
+                                    <div class="add-cart-box">
+                                        <a href="">
+                                            <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                                            THÊM VÀO GIỎ HÀNG
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="">
+                                        <h5 class="card-title">Nước ép</h5>
+                                    </a>
+                                    <p class="card-text">50.000 ₫</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 item">
+                        <div class="product-item">
+
+                            <div class="card" style="">
+                                <div class="card-img">
+                                    <img src="img/shirt/shirt3.jpg" class="card-img-top" alt="...">
+                                    <div class="add-cart-box">
+                                        <a href="">
+                                            <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                                            THÊM VÀO GIỎ HÀNG
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="">
+                                        <h5 class="card-title">Sinh Tố</h5>
+                                    </a>
+                                    <p class="card-text">50.000 ₫</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 item">
+                        <div class="product-item">
+
+                            <div class="card" style="">
+                                <div class="card-img">
+                                    <img src="img/shirt/shirt4.jpg" class="card-img-top" alt="...">
+                                    <div class="add-cart-box">
+                                        <a href="">
+                                            <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                                            THÊM VÀO GIỎ HÀNG
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="">
+                                        <h5 class="card-title">Bánh ngọt</h5>
+                                    </a>
+                                    <p class="card-text">20.000 ₫</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 item">
+                        <div class="product-item">
+
+                            <div class="card" style="">
+                                <div class="card-img">
+                                    <img src="img/shirt/shirt5.jpg" class="card-img-top" alt="...">
+                                    <div class="add-cart-box">
+                                        <a href="">
+                                            <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                                            THÊM VÀO GIỎ HÀNG
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="">
+                                        <h5 class="card-title">Bánh humbeger</h5>
+                                    </a>
+                                    <p class="card-text">50.000 ₫</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 item">
+                        <div class="product-item">
+
+                            <div class="card" style="">
+                                <div class="card-img">
+                                    <img src="img/shirt/shirt6.jpg" class="card-img-top" alt="...">
+                                    <div class="add-cart-box">
+                                        <a href="">
+                                            <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                                            THÊM VÀO GIỎ HÀNG
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="">
+                                        <h5 class="card-title">Nước uống đóng chai</h5>
+                                    </a>
+                                    <p class="card-text">15.000 ₫</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box-btn font-text-2 mb-3">
+                    <a href="shirt.html" class=" btn-viewmore" class="btn-blog-detail">Xem thêm</a>
+                </div>
+            </div>
+
+            <!-- Tin Tưc -->
+
+            <div class="box-element">
+                <div class="title-box mb-4">
+                    <h1>TIN TỨC MỚI</h1>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="product-item">
+                            <div class="card" style="">
+                                <img src="img/New folder/new1.png" class="card-img-top" alt="...">
+                                <div class="card-body card-news">
+                                    <h5 class="card-title">Khách hàng đánh giá đồ uống tại An Nhiên Cofee</h5>
+                                    <div class="infor-news">
+                                        <span><i class="fas fa-calendar-day"></i> 21/01/2021</span>
+                                        <span><i class="fas fa-user"></i> Minh Nguyễn</span> |
+                                        <span>2 bình luận</span>
+                                        <p class="content-card">  
+                                        </p>
+                                        <a href="" class="btn-blog-detail">Chi tiết >></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="product-item">
+                            <div class="card" style="">
+                                <img src="img/New folder/new2.png" class="card-img-top" alt="...">
+                                <div class="card-body card-news">
+                                    <h5 class="card-title">Kế hoạch Phát triển cửa hàng</h5>
+                                    <div class="infor-news">
+                                        <span><i class="fas fa-calendar-day"></i> 21/01/2021</span>
+                                        <span><i class="fas fa-user"></i> Minh Nguyễn</span> |
+                                        <span>2 bình luận</span>
+                                        <p class="content-card"> chúng tôi muốn hợp tác lên chỗi thương hiệu theo phong cách đặc biệt 
+                                        </p>
+                                        <a href="" class="btn-blog-detail">Chi tiết >></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="product-item">
+                            <div class="card" style="">
+                                <img src="img/New folder/new3.png" class="card-img-top" alt="...">
+                                <div class="card-body card-news">
+                                    <h5 class="card-title">Đánh giá của khách hàng về các dịch vụ tại cửa hàng</h5>
+                                    <div class="infor-news">
+                                        <span><i class="fas fa-calendar-day"></i> 21/01/2021</span>
+                                        <span><i class="fas fa-user"></i> Minh Nguyễn</span> |
+                                        <span>2 bình luận</span>
+                                        <p class="content-card"> Cửa hàng có rất nhiều tiện ích để khách hàng sử dụng
+                                        </p>
+                                        <a href="" class="btn-blog-detail">Chi tiết >></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-btn font-text-2">
+                    <a href="blog.html" class=" btn-viewmore">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+
     </main>
     <footer>
         <div class="container">
             <div class="list-slide-logo box-element">
                 <div class="owl-carousel owl-theme" id="owlCarouselLogo">
-                    <div class="item"><img src="../imgcuahang/ttvpv.jpg" alt=""></div>
-                    <div class="item"><img src="../imgcuahang/vtvpv2.jpg" alt=""></div>
-                    <div class="item"><img src="../imgcuahang/Họp nhóm3.jpg" alt=""></div>
-                    <div class="item"><img src="../imgcuahang/hopnhom2.jpg" alt=""></div>
+                    <div class="item"><img src="img/slidelogo/logo1.png" alt=""></div>
+                    <div class="item"><img src="img/slidelogo/logo2.png" alt=""></div>
+                    <div class="item"><img src="img/slidelogo/logo3.png" alt=""></div>
+                    <div class="item"><img src="img/slidelogo/logo4.png" alt=""></div>
 
-                    <div class="item"><img src="../imgcuahang/hopmanuline.jpg" alt=""></div>
+                    <div class="item"><img src="img/slidelogo/logo2.png" alt=""></div>
                 </div>
             </div>
         </div>
@@ -801,8 +931,8 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-infor-item">
                             <div class="footer-infor-title">
-                                <h5>An Nhiên COFFEE</h5>
-                                <p>Nét văn hóa đẹp của người Việt trong đương đại</p>
+                                <h5>An Nhiên Cofee</h5>
+                                <p>Một nét đẹp của văn hóa người việt trong đương đại</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-infor-item">
@@ -821,7 +951,7 @@
                             <div class="footer-infor-title">
                                 <h5>Theo Dõi Chúng Tôi</h5>
                                 <div class="follow-icon">
-                                    <a href=""><span style="color: #3B5A9A;"><i
+                                    <a href="https://www.facebook.com/ANCoffeeH"><span style="color: #3B5A9A;"><i
                                                 class="fab fa-facebook-square"></i></span></a>
                                     <a href=""><span style="color: #42C8F4;"><i
                                                 class="fab fa-twitter-square"></i></span></a>
@@ -852,13 +982,40 @@
     </footer>
 
 
-    <script src="template/js/jquery-3.5.1.js"></script>
-    <script src="header.js"></script>
-    <script src="footer.js"></script>
-    <script src="product.js"></script>
-    <script src="lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="../Annhiencofee/js/jquery.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="../lib/bootstrap/js/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('#owlCarouselProduct').owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 2000,
+                loop: true,
+                margin: 10,
+                nav: false,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    480: {
+                        items: 2
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            })
+            
+        })
+    </script>
 </body>
 
 </html>

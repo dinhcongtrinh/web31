@@ -7,17 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <link rel="icon" href="../img/logoannhien.jpg" type="image/gif">
-    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="lib/fontawesome-free-5.15.2-web/css/fontawesome.css">
-    <link rel="stylesheet" href="lib/fontawesome-free-5.15.2-web/css/brands.css">
-    <link rel="stylesheet" href="lib/fontawesome-free-5.15.2-web/css/solid.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/theme.default.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/fontawesome.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/brands.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/solid.css">
     <title>Liên Hệ  </title>
 </head>
 
@@ -41,12 +41,12 @@
             <div class="navbar-left-content">
                 <div class="navbar-left-item">
                     
-                    <a href="index.html" class="active-nav"><span><i class="fas fa-home"></i></span>Trang chủ</a>
+                    <a href="../Annhiencofee/trangchu.html" class="active-nav"><span><i class="fas fa-home"></i></span>Trang chủ</a>
                 </div>
                 <div>
                     <div class="navbar-left-item">
                         
-                        <a type="button" class="" href="#" id="btnDropdownMenuProduct">
+                        <a type="button" class="" href="../Annhiencofee/sanpham.html" id="btnDropdownMenuProduct">
                             <span><i class="fas fa-list"></i></span>
                             Sản Phẩm
 
@@ -54,19 +54,19 @@
                         </a>
                     </div>
                     <div id="dropdownMenuProduct" class="dropdown-menu-product">
-                        <a href="shirt.html">Ao</a>
-                        <a href="pant.html">Quần</a>
-                        <a href="shoes.html">Giày</a>
-                        <a href="accessories.html">Phụ Kiện</a>
+                        <a href="../baiviet/Espressoo.html">Cà Phê</a>
+                        <a href="../baiviet/phattrien.html">Đồ Ăn</a>
+                        <a href="../baiviet/chebiencf.html">Đồ Uống</a>
+                        <a href="../baiviet/caphe.html">Xuất khẩu</a>
                     </div>
                 </div>
                 <div class="navbar-left-item">
                     
-                    <a href="blog.html"><span><i class="far fa-newspaper"></i></span>Tin Tức</a>
+                    <a href="../Annhiencofee/tintuc.html"><span><i class="far fa-newspaper"></i></span>Tin Tức</a>
                 </div>
                 <div class="navbar-left-item">
                     <span><i class="fas fa-map"></i></span>
-                    <a href="contact.html">Liên Hệ</a>
+                    <a href="../Annhiencofee/lienhe.html">Liên Hệ</a>
                 </div>
             </div>
         </div>
@@ -247,14 +247,14 @@
     </section>
 
     <header>
-        <div class="header-wellcome">
+        <!-- <div class="header-wellcome">
 
             <div class="text-header">
                 <p>Wellcome to An Nhien Coffee !</p>
             </div>
 
-        </div>
-        <div class="" id="navbarFixed">
+        </div> -->
+        <div class="navbarFixed" >
             <nav class="navbar navbar-expand-lg navbar-light container">
                 <button id="btn-active-nav" class="navbar-toggler" type="button" data-toggle="collapse" data-target=""
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -273,24 +273,25 @@
                 </div>
                 <div class="collapse navbar-collapse main-menu" id="navbarNav">
                     <div class="navbar-nav navbar-menu">
-                        <div class="nav-item"><a href="index.html">Trang chủ</a></div>
-                        <div class="nav-item dropdown">
+                        <div class="nav-item"><a href="./trangchu.html">Trang chủ</a>
+                        </div>
+                        <div class="nav-item dropdown ">
                             <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Sản Phẩm
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="shirt.html">Ao</a>
-                                <a class="dropdown-item" href="pant.html">Quan</a>
-                                <a class="dropdown-item" href="shoes.html">Giay</a>
-                                <a class="dropdown-item" href="accessories.html">Phu Kien</a>
+                                <a href="../baiviet/Espressoo.html">Espressoo</a>
+                        <a href="../baiviet/phattrien.html">Phát triển</a>
+                        <a href="../baiviet/chebiencf.html">Chế biến</a>
+                        <a href="../baiviet/caphe.html">Cà phê</a>
                             </div>
                         </div>
-                        <div class="nav-item"><a href="blog.html" class="">Tin Tức</a>
+                        <div class="nav-item"><a href="./tintuc.html">Tin Tức</a>
 
                         </div>
 
-                        <div class="nav-item active-nav"><a href="">Liên Hệ</a></div>
+                        <div class="nav-item"><a href="./lienhe.html">Liên Hệ</a></div>
                     </div>
                     <ul class="navbar-nav navbar-icon ml-auto">
                         <li class="nav-item">
@@ -318,7 +319,7 @@
                 <div class="current-page-box">
                     <h3 class="title-banner-page">Liên Hệ</h3>
                     <div class="current-page-box-link">
-                        <a href="index.html" class="link-previous-page">Trang chủ ></a>
+                        <a href="./trangchu.html" class="link-previous-page">Trang chủ ></a>
                         <span class="current-page"> Liên Hệ</span>
                     </div>
                 </div>
@@ -327,9 +328,10 @@
                 <div class="col-md-6 col-sm-12 mb-5">
                     <div class="location">
                         <iframe
-                            src="https://www.google.com/maps/d/viewer?mid=1FdNr6bLh9TprldYQspGmrtk00UM&hl=vi&ll=16.08376698514189%2C105.80356199999999&z=6"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.863180662635!2d105.79211591486109!3d20.998120886014902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acba8ad197a5%3A0xa55e51322131e722!2zNDggVOG7kSBI4buvdSwgVHJ1bmcgVsSDbiwgVOG7qyBMacOqbSwgSMOgIE7hu5lpLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1612358708312!5m2!1sen!2s"
                             frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                             tabindex="0"></iframe>
+        
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 contact">
@@ -356,12 +358,12 @@
         <div class="container">
             <div class="list-slide-logo box-element">
                 <div class="owl-carousel owl-theme" id="owlCarouselLogo">
-                    <div class="item"><img src="img/slidelogo/logo1.png" alt=""></div>
-                    <div class="item"><img src="img/slidelogo/logo2.png" alt=""></div>
-                    <div class="item"><img src="img/slidelogo/logo3.png" alt=""></div>
-                    <div class="item"><img src="img/slidelogo/logo4.png" alt=""></div>
+                    <div class="item"><img src="../imgcuahang/ttvpv.jpg" alt=""></div>
+                    <div class="item"><img src="../imgcuahang/vtvpv2.jpg" alt=""></div>
+                    <div class="item"><img src="../imgcuahang/Họp nhóm3.jpg" alt=""></div>
+                    <div class="item"><img src="../imgcuahang/hopnhom2.jpg" alt=""></div>
 
-                    <div class="item"><img src="img/slidelogo/logo2.png" alt=""></div>
+                    <div class="item"><img src="../imgcuahang/hopmanuline.jpg" alt=""></div>
                 </div>
             </div>
         </div>
@@ -418,7 +420,7 @@
                             <div class="footer-infor-title">
                                 <h5>Theo Dõi Chúng Tôi</h5>
                                 <div class="follow-icon">
-                                    <a href=""><span style="color: #3B5A9A;"><i
+                                    <a href="https://www.facebook.com/ANCoffeeH"><span style="color: #3B5A9A;"><i
                                                 class="fab fa-facebook-square"></i></span></a>
                                     <a href=""><span style="color: #42C8F4;"><i
                                                 class="fab fa-twitter-square"></i></span></a>
@@ -448,10 +450,10 @@
         </div>
     </footer>
 
-    <script src="template/js/jquery-3.5.1.js"></script>
-    <script src="footer.js"></script>
-    <script src="header.js"></script>
-    <script src="lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="../Annhiencofee/js/jquery.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="../lib/bootstrap/js/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>

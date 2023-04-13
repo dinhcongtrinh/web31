@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="product.css">
-    <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/theme.default.min.css">
     <link rel="icon" href="../img/logoannhien.jpg" type="image/gif">
     <title>Sản Phẩm</title>
 </head>
@@ -37,12 +37,12 @@
             <div class="navbar-left-content">
                 <div class="navbar-left-item">
                     
-                    <a href="index.html" class="active-nav"><span><i class="fas fa-home"></i></span>Trang chủ</a>
+                    <a href="./trangchu.html" class="active-nav"><span><i class="fas fa-home"></i></span>Trang chủ</a>
                 </div>
                 <div>
                     <div class="navbar-left-item">
                         
-                        <a type="button" class="" href="#" id="btnDropdownMenuProduct">
+                        <a type="button" class="" href="./sanpham.html" id="btnDropdownMenuProduct">
                             <span><i class="fas fa-list"></i></span>
                             Sản Phẩm
 
@@ -50,19 +50,19 @@
                         </a>
                     </div>
                     <div id="dropdownMenuProduct" class="dropdown-menu-product">
-                        <a href="shirt.html">Ao</a>
-                        <a href="pant.html">Quần</a>
-                        <a href="shoes.html">Giày</a>
-                        <a href="accessories.html">Phụ Kiện</a>
+                        <a href="../baiviet/Espressoo.html">Espressoo</a>
+                        <a href="../baiviet/phattrien.html">Phát triển</a>
+                        <a href="../baiviet/chebiencf.html">Chế biến</a>
+                        <a href="../baiviet/caphe.html">Cà phê</a>
                     </div>
                 </div>
                 <div class="navbar-left-item">
                     
-                    <a href="blog.html"><span><i class="far fa-newspaper"></i></span>Tin Tức</a>
+                    <a href="./tintuc.html"><span><i class="far fa-newspaper"></i></span>Tin Tức</a>
                 </div>
                 <div class="navbar-left-item">
                     <span><i class="fas fa-map"></i></span>
-                    <a href="contact.html">Liên Hệ</a>
+                    <a href="./lienhe.html">Liên Hệ</a>
                 </div>
             </div>
         </div>
@@ -243,20 +243,20 @@
 
 
     <header>
-        <div class="header-wellcome">
+        <!-- <div class="header-wellcome">
 
             <div class="text-header">
                 <p>Wellcome to An Nhiên !</p>
             </div>
 
-        </div>
-        <div class="" id="navbarFixed">
+        </div> -->
+        <div class="navbarFixed" >
             <nav class="navbar navbar-expand-lg navbar-light container">
                 <button id="btn-active-nav" class="navbar-toggler" type="button" data-toggle="collapse" data-target=""
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="../img/logoannhien.jpg" alt=""></a>
+                <a class="navbar-brand" href="../Annhiencofee/trangchu.html"><img src="../img/logo3.jpg" alt=""></a>
                 <div class="header-nav-card">
                     <button class="btn-search" id="btnSearchNav" type="button" style="outline: none"><span><i
                                 class="fa fa-search" aria-hidden="true"></i></span></button>
@@ -269,24 +269,25 @@
                 </div>
                 <div class="collapse navbar-collapse main-menu" id="navbarNav">
                     <div class="navbar-nav navbar-menu">
-                        <div class="nav-item"><a href="index.html">Trang chủ</a></div>
+                        <div class="nav-item"><a href="./trangchu.html">Trang chủ</a>
+                        </div>
                         <div class="nav-item dropdown ">
-                            <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            <a class="dropdown-toggle" href="./sanpham.html" id="navbarDropdownMenuLink" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Sản Phẩm
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="shirt.html">Ao</a>
-                                <a class="dropdown-item" href="pant.html">Quan</a>
-                                <a class="dropdown-item" href="shoes.html">Giay</a>
-                                <a class="dropdown-item" href="accessories.html">Phu Kien</a>
+                        <a href="../baiviet/Espressoo.html">Cà Phê</a>
+                        <a href="../baiviet/phattrien.html">Đồ Ăn</a>
+                        <a href="../baiviet/chebiencf.html">Đồ Uống</a>
+                        <a href="../baiviet/caphe.html">Xuất khẩu</a>
                             </div>
                         </div>
-                        <div class="nav-item"><a href="blog.html">Tin Tức</a>
+                        <div class="nav-item"><a href="./tintuc.html">Tin Tức</a>
 
                         </div>
 
-                        <div class="nav-item"><a href="contact.html">Liên Hệ</a></div>
+                        <div class="nav-item"><a href="./lienhe.html">Liên Hệ</a></div>
                     </div>
                     <ul class="navbar-nav navbar-icon ml-auto">
                         <li class="nav-item">
@@ -322,7 +323,7 @@
                     <h3 class="title-banner-page">Sản Phẩm</h3>
                     <div class="current-page-box-link">
                         <a href="" class="link-previous-page">Trang chủ ></a>
-                        <span class="current-page"> Áo</span>
+                        <!-- <span class="current-page"> Áo</span> -->
                     </div>
                 </div>
             </div>
@@ -478,9 +479,9 @@
                                     </div>
                                     <div class="card-body">
                                         <a href="detailProduct.html">
-                                            <h5 class="card-title">Áo Sơ Mi Owen</h5>
+                                            <h5 class="card-title">Bạc Sửu</h5>
                                         </a>
-                                        <p class="card-text"> <span>550.000 </span>₫</p>
+                                        <p class="card-text"> <span>45.000 </span>₫</p>
 
                                     </div>
                                 </div>
@@ -502,9 +503,9 @@
                                     </div>
                                     <div class="card-body">
                                         <a href="detailProduct.html">
-                                            <h5 class="card-title">Áo thun nam dài tay Julido</h5>
+                                            <h5 class="card-title">Trà Cam quế nóng</h5>
                                         </a>
-                                        <p class="card-text"> <span>200.000 </span>₫</p>
+                                        <p class="card-text"> <span>45.000 </span>₫</p>
 
                                     </div>
                                 </div>
@@ -524,9 +525,9 @@
                                     </div>
                                     <div class="card-body">
                                         <a href="detailProduct.html">
-                                            <h5 class="card-title">Áo Uniqlo Nam polo</h5>
+                                            <h5 class="card-title">Capuchino</h5>
                                         </a>
-                                        <p class="card-text"> <span>500.000 </span>₫</p>
+                                        <p class="card-text"> <span>45.000 </span>₫</p>
 
                                     </div>
                                 </div>
@@ -547,9 +548,9 @@
                                     </div>
                                     <div class="card-body">
                                         <a href="detailProduct.html">
-                                            <h5 class="card-title">NAM Áo polo DRY</h5>
+                                            <h5 class="card-title">Trà Bưởi Hồng </h5>
                                         </a>
-                                        <p class="card-text"> <span>500.000 </span>₫</p>
+                                        <p class="card-text"> <span>45.000 </span>₫</p>
 
                                     </div>
                                 </div>
@@ -570,8 +571,8 @@
                                     </div>
                                     <div class="card-body">
                                         <a href=""></a>
-                                        <h5 class="card-title">NAM Uniqlo U Áo Vest</h5>
-                                        <p class="card-text"> <span>1.500.000 </span>₫</p>
+                                        <h5 class="card-title">Trà Cam Đào</h5>
+                                        <p class="card-text"> <span>45.000 </span>₫</p>
 
                                     </div>
                                 </div>
@@ -591,8 +592,8 @@
                                     </div>
                                     <div class="card-body">
                                         <a href=""></a>
-                                        <h5 class="card-title">NAM Uniqlo U Áo Khoác Dài</h5>
-                                        <p class="card-text"> <span>2.000.000 </span>₫</p>
+                                        <h5 class="card-title">Capuchino</h5>
+                                        <p class="card-text"> <span>2</span>35.000/p>
 
                                     </div>
                                 </div>
@@ -612,8 +613,8 @@
                                     </div>
                                     <div class="card-body">
                                         <a href=""></a>
-                                        <h5 class="card-title">Áo Sơ Mi Owen </h5>
-                                        <p class="card-text"> <span>500.000 </span>₫</p>
+                                        <h5 class="card-title">Trà Cam quế </h5>
+                                        <p class="card-text"> <span>45.000 </span>₫</p>
 
                                     </div>
                                 </div>
@@ -633,8 +634,8 @@
                                     </div>
                                     <div class="card-body">
                                         <a href=""></a>
-                                        <h5 class="card-title">Paris Saint-Germain Logo</h5>
-                                        <p class="card-text"> <span>1.000.000 </span>₫</p>
+                                        <h5 class="card-title">Bạc Sửu</h5>
+                                        <p class="card-text"> <span>35.000 </span>₫</p>
 
                                     </div>
                                 </div>
@@ -654,8 +655,8 @@
                                     </div>
                                     <div class="card-body">
                                         <a href=""></a>
-                                        <h5 class="card-title">Áo Thun Nam Thể Thao</h5>
-                                        <p class="card-text"> <span>500.000 </span>₫</p>
+                                        <h5 class="card-title">Đồ uống</h5>
+                                        <p class="card-text"> <span> 40.000</span>₫</p>
 
                                     </div>
                                 </div>
@@ -757,12 +758,12 @@
         <div class="container">
             <div class="list-slide-logo box-element">
                 <div class="owl-carousel owl-theme" id="owlCarouselLogo">
-                    <div class="item"><img src="../img/logoannhien.jpg" alt=""></div>
-                    <div class="item"><img src="../img/logoannhien.jpg" alt=""></div>
-                    <div class="item"><img src="../img/dulichjvuoncf.jpg" alt=""></div>
-                    <div class="item"><img src="../img.cf/trabuoihongf.jpg" alt=""></div>
+                    <div class="item"><img src="../imgcuahang/ttvpv.jpg" alt=""></div>
+                    <div class="item"><img src="../imgcuahang/vtvpv2.jpg" alt=""></div>
+                    <div class="item"><img src="../imgcuahang/Họp nhóm3.jpg" alt=""></div>
+                    <div class="item"><img src="../imgcuahang/hopnhom2.jpg" alt=""></div>
 
-                    <div class="item"><img src="img/slidelogo/logo2.png" alt=""></div>
+                    <div class="item"><img src="../imgcuahang/hopmanuline.jpg" alt=""></div>
                 </div>
             </div>
         </div>
@@ -799,8 +800,8 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-infor-item">
                             <div class="footer-infor-title">
-                                <h5>Men's Shop</h5>
-                                <p>Cửa hàng thời trang nam mang phong cách mới lạ</p>
+                                <h5>An Nhiên COFFEE</h5>
+                                <p>Nét Đẹp văn hóa Người Việt Trong đương đại</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-infor-item">
@@ -819,7 +820,7 @@
                             <div class="footer-infor-title">
                                 <h5>Theo Dõi Chúng Tôi</h5>
                                 <div class="follow-icon">
-                                    <a href=""><span style="color: #3B5A9A;"><i
+                                    <a href="https://www.facebook.com/ANCoffeeH"><span style="color: #3B5A9A;"><i
                                                 class="fab fa-facebook-square"></i></span></a>
                                     <a href=""><span style="color: #42C8F4;"><i
                                                 class="fab fa-twitter-square"></i></span></a>
@@ -850,11 +851,11 @@
     </footer>
 
 
-    <script src="template/js/jquery-3.5.1.js"></script>
-    <script src="header.js"></script>
-    <script src="footer.js"></script>
-    <script src="product.js"></script>
-    <script src="lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="../Annhiencofee/js/jquery.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="../lib/bootstrap/js/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
