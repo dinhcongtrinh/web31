@@ -1,0 +1,9 @@
+.post {
+    background-color: white;
+    box-shadow: 0 3px 10px rgba (0 0 0 / 20%);
+    border-radius: 4px;
+}
+.post-thumbnail {
+    max-width: 100%;
+    
+}

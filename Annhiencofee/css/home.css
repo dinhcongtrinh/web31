@@ -3,21 +3,22 @@
     color: white;
     top: 30%;
     left: 10%;
-    width: 40%;
+    width: 45%;
     font-family: 'Playfair Display', serif;
 }
 .slide-content-box .slide-title{
     font-size: 2.8rem;
 }
+
 .slide-content-box p{
     margin-bottom: 2rem;
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
-    color: rgb(231, 231, 231);
+    color: #08bbb7;
     
 }
 .btn-in-slide{
-    background-color: #F39C12;
+    background-color: #08bbb7;
     color: #fff;
     padding: .7rem 1.5rem;
     /* border-radius: 5px; */
@@ -62,6 +63,7 @@
     position: relative;
     height: 220px;
     /* width: 200px; */
+   
   
 }
 .about-picture .picture-title{
@@ -69,7 +71,7 @@
     font-weight: bold;
     font-family: 'Playfair Display', serif;
     /* color: rgb(27, 26, 26); */
-    position: absolute; 
+    /* position: absolute;  */
     color: white;
     display: block;
     text-align: center;
@@ -119,7 +121,7 @@ img{
 /* tin tuc */
 .btn-blog-detail{
     color: #08BBB7;
-    font-size: 1rem;
+    font-size: 1,5rem;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
@@ -160,7 +162,9 @@ img{
 @media only screen and (max-width:1140px){
     /* Slide */
     .slide-content-box .slide-title{
+     
         font-size: 2rem;
+        color: #08BBB7;
     }
     .slide-content-box p{
         font-size: 1rem;
@@ -188,6 +192,7 @@ img{
     .btn-in-slide{
         padding: 0.5rem 1rem;
         font-size: .5rem;
+        color: #08BBB7;
 
     }
     
@@ -251,15 +256,23 @@ img{
     
 }
 
-
-    .picture-title{
+.picture-title{
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: rgba(0, 0, 0,0.6);
+        background-color: rgba(0, 0, 0,0.6);;
         padding: .3rem;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
+    .picture-title:hover {
+        background-color: #08BBB7;
+    }
+.card-img img{
+    max-width: 100%;
+    height: 220px;
+}
 
 
 

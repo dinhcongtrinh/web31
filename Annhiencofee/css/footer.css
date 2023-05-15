@@ -1,13 +1,18 @@
 footer{
     font-family: 'Roboto', sans-serif;
+  border-top: #08BBB7;
 }
 .list-slide-logo{
-    border-bottom:1px solid rgb(86, 86, 86) ;
+    border-bottom:1px solid rgba(219, 33, 33, 0.727) ;
     border-top: 1px solid rgb(84, 84, 84);
     padding: 1.5rem 0;
 }
 .list-slide-logo .owl-theme .item img{
-    filter: brightness(300%);
+   
+    width: 300px;
+    height: 350px;
+    padding: 50px;
+    
 }
 .footer-icon-service{
     margin-right: 1rem;
