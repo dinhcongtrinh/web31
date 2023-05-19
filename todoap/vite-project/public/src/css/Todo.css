@@ -1,7 +1,7 @@
 body {
     margin: auto;
 }
-
+  
 .todoapp {
     width: 500px;
     background: #fff;
@@ -82,6 +82,14 @@ input[type="checkbox" i] {
     color: #cc9a9a;
     margin-bottom: 11px;
     transition: color 0.2s ease-out;
+}
+
+.todo-list li:hover .destroy {
+    display: block;
+}
+
+.todo-list li .destroy:after {
+    content: '×';
 }
 
 button {
@@ -236,4 +244,23 @@ button {
 
 .filters li {
     display: inline;
+}
+
+.todo-list li.editing:last-child {
+    margin-bottom: -1px;
+}
+.todo-list li.editing {
+    border-bottom: none;
+    padding: 0;
+}
+.todo-list li.editing .edit {
+    display: block;
+    width: 90%;
+    padding: 12px 16px;
+    margin: 0 0 0 10%;
+}
+
+.todo-list li.completed label {
+    color: #d9d9d9;
+    text-decoration: line-through;
 }
