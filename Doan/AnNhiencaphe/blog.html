@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+    <link rel="stylesheet" href="template/css/header.css">
+    <link rel="stylesheet" href="template/css/main.css">
+    <link rel="stylesheet" href="template/css/footer.css">
+    <link rel="stylesheet" href="template/css/blog.css">
+    <link rel="stylesheet" href="template/css/generalblog.css">
+    <link rel="icon" href="img/logoannhien.jpg" type="image/gif">
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="lib/fontawesome-free-5.15.2-web/css/fontawesome.css">
+    <link rel="stylesheet" href="lib/fontawesome-free-5.15.2-web/css/brands.css">
+    <link rel="stylesheet" href="lib/fontawesome-free-5.15.2-web/css/solid.css">
+    <title>Tin Viết</title>
+</head>
+
+<body>
+    <div id="hideContent" class=""></div>
+    <section class="navbar-left-box">
+        <div id="hideContent" class=""></div>
+        <div id="navbar-active" class="navbar-left">
+            <div class="visual">
+                <a id="btn-login" type="button" href="#" data-toggle="modal"
+                data-target="#exampleModal">
+                    <div class="avatar-box">
+                        <div class="avatar-icon"><span><i class="fas fa-user-circle"></i></span></div>
+                        <div class="avatar-content">
+                            <div>Đăng nhập</div>
+                            <div class="avatar-content-adver">Nhận thêm ưu đãi</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-left-content">
+                <div class="navbar-left-item">
+
+                    <a href="index.html" class="active-nav"><span><i class="fas fa-home"></i></span>Trang chủ</a>
+                </div>
+                <div>
+                    <div class="navbar-left-item">
+
+                        <a type="button" class="" href="#" id="btnDropdownMenuProduct">
+                            <span><i class="fas fa-list"></i></span>
+                            Sản Phẩm
+
+                            <span class="btn-dropdown"><i class="fas fa-angle-down"></i></span>
+                        </a>
+                    </div>
+                    <div id="dropdownMenuProduct" class="dropdown-menu-product">
+                        <a href="caphe.html">Cà Phê</a>
+                        <a href="douong.html">Đồ Uống</a>
+                        <a href="Theeat.html">Đồ Ăn</a>
+                        <a href="Express.html">Xuất khẩu</a>
+                    </div
+                </div>
+                <div class="navbar-left-item">
+
+                    <a href="blog.html"><span><i class="far fa-newspaper"></i></span>Tin Tức</a>
+                </div>
+                <div class="navbar-left-item">
+                   
+                    <a href="contact.html"> <span><i class="fas fa-map"></i></span>Liên Hệ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="login">
+        <div class="modal fade modal-login" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header modal-login-header">
+                        <ul class="nav-select-action nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item nav-modal-custom" role="presentation">
+                                <a class="nav-link active " id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                    role="tab" aria-controls="pills-home" aria-selected="true">Đăng Nhập</a>
+                            </li>
+                            <li class="nav-item nav-modal-custom" role="presentation">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                    role="tab" aria-controls="pills-profile" aria-selected="false">Tạo Tài Khoản</a>
+                            </li>
+
+                        </ul>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <form class="form-login">
+                                    <div class="form-group row">
+                                        <label for="inputEmail3" class="col-sm-3 col-form-label">Email / SĐT</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="inputEmailLogin"
+                                                placeholder="Nhập Email hoặc Số điện thoại">
+                                            <span id="errorInputEmailLogin" class="error-message"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Mật Khẩu</label>
+                                        <div class="col-sm-9">
+                                            <input type="password" class="form-control" id="inputPasswordLogin"
+                                                placeholder="Mật khẩu từ 9 đến 32 ký tự">
+                                            <span id="errorInputPassLogin" class="error-message"></span>
+                                        </div>
+                                    </div>
+                                    </fieldset>
+                                    <div class="form-group row">
+                                        <label for="inputPassword3" class="col-sm-3 col-form-label"></label>
+                                        <div class="col-sm-9">
+                                            <button type="submit" id="btnSubmitLogin"
+                                                class="my-2 btn-login btn w-100">Đăng nhập</button>
+                                            <div>Quên mật khẩu? Nhấn tại <a href="#"> đây</a></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group row my-4">
+                                        <div class="col-sm-3"></div>
+                                        <div class="col-sm-9">
+
+                                            <button type="button" class="my-2 btn-login-google btn w-100">Đăng nhập bằng
+                                                Google++</button>
+                                            <button type="button" class="my-2 btn-login-facebook btn w-100">Đăng nhập
+                                                bằng Facebook</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <form class="form-login">
+                                    <div class="form-group row">
+                                        <label for="inputEmail3" class="col-sm-3 col-form-label">Họ Tên</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" required class="form-control" id="inputNameRegis"
+                                                placeholder="Nhập họ tên">
+                                            <span id="errorInputNameRegis" class="error-message"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword3" class="col-sm-3 col-form-label">SĐT</label>
+                                        <div class="col-sm-9">
+                                            <input type="number" required class="form-control" id="inputPhoneRegis"
+                                                placeholder="Nhập số điện thoại">
+                                            <span id="errorInputPhoneRegis" class="error-message"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Email</label>
+                                        <div class="col-sm-9">
+                                            <input type="email" required class="form-control" id="inputEmailRegis"
+                                                placeholder="Nhập email">
+                                            <span id="errorInputEmailRegis" class="error-message"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Mật Khẩu</label>
+                                        <div class="col-sm-9">
+                                            <input type="password" required class="form-control" id="inputPasswordRegis"
+                                                placeholder="Mật khẩu từ 9 đến 32 ký tự">
+                                            <span id="errorInputPassRegis" class="error-message"></span>
+                                        </div>
+                                    </div>
+                                    <fieldset class="form-group row">
+                                        <legend class="col-form-label col-sm-3 float-sm-left pt-0">Giới Tính</legend>
+                                        <div class="col-sm-9">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" name="sex" type="radio"
+                                                    id="inlineCheckbox1" value="option1" checked>
+                                                <label class="form-check-label" for="inlineCheckbox1">Nam</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" name="sex" type="radio"
+                                                    id="inlineCheckbox2" value="option2">
+                                                <label class="form-check-label" for="inlineCheckbox2">Nữ</label>
+                                            </div>
+
+                                        </div>
+                                    </fieldset>
+                                    <div class="form-group row">
+                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Ngày Sinh</label>
+                                        <div class="col-sm-3 my-1">
+                                            <label class="mr-sm-2 sr-only" for="formSigninSlectDay">Ngày</label>
+                                            <select class="custom-select mr-sm-2" id="formSigninSlectDay">
+                                                <option selected value="-1">Ngày</option>
+
+                                            </select>
+
+                                        </div>
+                                        <div class="col-sm-3 my-1">
+                                            <label class="mr-sm-2 sr-only" for="formSigninSlectMonth">Tháng</label>
+                                            <select class="custom-select mr-sm-2" id="formSigninSlectMonth">
+                                                <option selected value="-1">Tháng</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-3 my-1">
+                                            <label class="mr-sm-2 sr-only" for="formSigninSlectYear">Năm</label>
+                                            <select class="custom-select mr-sm-2" id="formSigninSlectYear">
+                                                <option selected value="-1">Năm</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-3"></div>
+                                        <span id="errorSelectDate" class="error-message col-sm-9"
+                                            style="padding-left:1rem ;"></span>
+                                    </div>
+                                    <div class="form-group row my-4">
+                                        <div class="col-sm-3"></div>
+                                        <div class="col-sm-9">
+                                            <button type="submit" id="btnSubmitRegis"
+                                                class="my-2 btn-login btn w-100">Tạo tài
+                                                khoản</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="" class="search">
+        <div id="hideContentSearch" class=""></div>
+        <div class="search-box" id="searchBox">
+            <form action="" class="form-seach" id="form-search">
+                <input type="text" name="" class="form-input-search" id="">
+                <button type="submit" class="btn-submit-search"><span><i class="fas fa-search"></i></span></button>
+                <button type="button" class="btnCancel">X</button>
+            </form>
+            <div class="resSearch">
+
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <!-- <div class="header-wellcome">
+
+            <div class="text-header">
+                <p>Wellcome to Men's Shop !</p>
+            </div>
+
+        </div> -->
+        <div class="" id="navbarFixed">
+            <nav class="navbar navbar-expand-lg navbar-light container">
+                <button id="btn-active-nav" class="navbar-toggler" type="button" data-toggle="collapse" data-target=""
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="img/logoannhien.jpg" alt=""></a>
+                <div class="header-nav-card">
+                    <button class="btn-search" id="btnSearchNav" type="button" style="outline: none"><span><i
+                                class="fa fa-search" aria-hidden="true"></i></span></button>
+                    <a href=""><span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
+
+                </div>
+                <div class="nav-search-box" id="navSearchBox">
+                    <div class="nav-icon-search"><span><i class="fa fa-search" aria-hidden="true"></i></span></div>
+                    <input type="text" class="w-100 form-control" placeholder="Bạn muốn tìm gì ?">
+                </div>
+                <div class="collapse navbar-collapse main-menu" id="navbarNav">
+                    <div class="navbar-nav navbar-menu">
+                        <div class="nav-item"><a href="index.html">Trang chủ</a></div>
+                        <div class="nav-item dropdown">
+                            <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Sản Phẩm
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a href="caphe.html">Cà Phê</a>
+                                <a href="douong.html">Đồ Uống</a>
+                                <a href="Theeat.html">Đồ Ăn</a>
+                                <a href="Express.html">Xuất khẩu</a>
+                            </div>
+                        </div>
+                        <div class="nav-item active-nav"><a href="blog.html">Tin Tức</a>
+
+                        </div>
+
+                        <div class="nav-item"><a href="contact.html">Liên Hệ</a></div>
+                    </div>
+                    <ul class="navbar-nav navbar-icon ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" type="button" id="btnSearch"><span><i class="fa fa-search"
+                                        aria-hidden="true"></i></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" type="button" href="#" data-toggle="modal"
+                                data-target="#exampleModal"><span><i class="fa fa-user"
+                                        aria-hidden="true"></i></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html"><span class=""><i class="fa fa-shopping-cart"
+                                        aria-hidden="true"></i></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="banner-current-page box-element">
+                <img src="img/banerhatcf.jpg" alt="">
+                <div class="current-page-box">
+                    <h3 class="title-banner-page">Tin Tức</h3>
+                    <div class="current-page-box-link">
+                        <a href="index.html" class="link-previous-page">Trang chủ ></a>
+                        <span class="current-page"> Tin Tức</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-9 col-md-9 col-sm-12 box-element">
+                    <div class="card card-blog">
+
+                        <div class="card-body blog-content">
+                            <img src="./img/do-uong/douong.jpg" alt="...">
+                            <h3 class="card-title"><a href="detailblog.html">Trải nhiệm sản phẩm của cửa hàng </a></h3>
+                            <div class="card-infor-area">
+                                <span><i class="fas fa-calendar-week"></i> 01/01/2021</span>
+                                <span><i class="fas fa-user"></i> Minh Nguyễn </span>|
+                                <span>2 bình luận</span>
+                            </div>
+                            <p class="card-text">Đồ uống đa dạng và kèm đồ ăn mà cửa hàng mang lại để khách hàng thỏa thức trải nhiệm</p>
+                            <a href="detailblog.html" class="btn-blog-viewdetail">Chi tiết >></a>
+                        </div>
+
+                    </div>
+
+                    <div class="card card-blog">
+
+                        <div class="card-body blog-content">
+                            <img src="./img/imgcuahang/hopmanuline.jpg" alt="...">
+                            <h3 class="card-title"><a href="detailblog.html">Tổ chức sinh nhật tại cửa hàng </a></h3>
+                            <div class="card-infor-area">
+                                <span><i class="fas fa-calendar-week"></i> 01/01/2021</span>
+                                <span><i class="fas fa-user"></i> Minh Nguyễn </span>|
+                                <span>2 bình luận</span>
+                            </div>
+                            <p class="card-text"> không gian yên tĩnh thoáng đãng, âm nhạc, đồ uống là lựa chọn để tổ chức sinh nhật.  
+
+                               </p>
+                            <a href="detailblog.html" class="btn-blog-viewdetail">Chi tiết >></a>
+                        </div>
+
+                    </div>
+                    <div class="card card-blog">
+
+                        <div class="card-body blog-content">
+                            <img src="./img/imgcuahang/phong-vấn-trường-quay.jpg" alt="...">
+                            <h3 class="card-title"><a href="detailblog.html">Không gian tầng hai được chọn làm trừơng quay vtv</a></h3>
+                            <div class="card-infor-area">
+                                <span><i class="fas fa-calendar-week"></i> 01/01/2021</span>
+                                <span><i class="fas fa-user"></i> Minh Nguyễn </span>|
+                                <span>2 bình luận</span>
+                            </div>
+                            <p class="card-text">Kiến trúc ánh sáng tốt, phòng ốc đẹp, được cách âm bên ngoài . Đó là một lựa chọn để làm trường quay phỏng vấn  </p>
+                            <a href="detailblog.html" class="btn-blog-viewdetail">Chi tiết >></a>
+                        </div>
+
+                    </div>
+                    <div class="pagination-box">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="detailblog.html" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item "><a class="page-link active-pagination" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="detailblog.html" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 box-element">
+
+                    <div class="blog-sidebar-content">
+                        <form action="">
+                            <div class="form-group blog-form-search">
+                                <input type="text" placeholder="Tìm kiếm bài viết" class="form-control">
+                                <button type="submit" class="btn-submit-search"><span><i
+                                            class="fas fa-search"></i></span></button>
+                            </div>
+                        </form>
+
+                        <div class="blog-category-filter">
+                            <h3 class="heading-blog">Dịch vụ Của Hàng</h3>
+                            <ul class="list-category">
+                                <li><a href=""><span><i class="fas fa-angle-right"></i></span> Phòng Họp </a></li>
+                                <li><a href=""><span><i class="fas fa-angle-right"></i></span> Đồ Uống</a></li>
+                                <li><a href=""><span><i class="fas fa-angle-right"></i></span> Đồ Ăn</a></li>
+                                <li><a href=""><span><i class="fas fa-angle-right"></i></span> Wifi</a></li>
+                            </ul>
+                        </div>
+                        <div class="blog-category-filter">
+                            <h3 class="heading-blog">Phát Triển Thương Hiệu</h3>
+                            <ul class="list-category">
+                                <li><a href=""><span><i class="fas fa-angle-right"></i></span> Hợp Tác Đầu Tư </a></li>
+                                <li><a href=""><span><i class="fas fa-angle-right"></i></span> Chuyển Nhượng Của Hàng</a></li>
+                                <li><a href=""><span><i class="fas fa-angle-right"></i></span> Kế Hoạch Marketting</a></li>
+                                <li><a href=""><span><i class="fas fa-angle-right"></i></span> Xuất Khẩu Sản Phẩm</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="post-popular">
+                            <h3 class="heading-blog">Họp Nhóm Tại Cửa Hàng An Nhiên</h3>
+                            <div class="post-popular-card">
+                                <div class="post-img">
+                                    <img src="./img/imgcuahang/cửahang.jpg" alt="">
+                                </div>
+                                <div class="post-content">
+                                    <h5><a href="">Nhóm Bảo Hiểm Manulife</a></h5>
+                                    <div class="post-time"><span><i class="fas fa-calendar-alt"></i></span> 25/02/2021
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="post-popular-card">
+                                <div class="post-img">
+                                    <img src="./img/imgcuahang/cong-nghe.jpg" alt="">
+                                </div>
+                                <div class="post-content">
+                                    <h5><a href="">Nhóm Công Nghệ Số</a></h5>
+                                    <div class="post-time"><span><i class="fas fa-calendar-alt"></i></span> 28/01/2021
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="post-popular-card">
+                                <div class="post-img">
+                                    <img src="./img/imgcuahang/hopnhom.jpg" alt="">
+                                </div>
+                                <div class="post-content">
+                                    <h5><a href="">Nhóm Quảng Cáo Sản Phẩm Sách Dạy Trẻ Nhỏ</a></h5>
+                                    <div class="post-time"><span><i class="fas fa-calendar-alt"></i></span> 01/01/2021
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="post-popular-card">
+                                <div class="post-img">
+                                    <img src="./img/imgcuahang/nhom-bh-manulife.webp" alt="">
+                                </div>
+                                <div class="post-content">
+                                    <h5><a href="">Tập Đoàn Bất Động Sản Thiên Khôi Dạy Kỹ Năng</a></h5>
+                                    <div class="post-time"><span><i class="fas fa-calendar-alt"></i></span> 01/01/2021
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="post-tag">
+                            <h3 class="heading-blog">Danh Mục Sản Phẩm</h3>
+                            <div class="tag-box">
+                                <a href="" class="tag-item">Abrica</a>
+                                <a href="" class="tag-item">Robusta</a></a>
+                                <a href="" class="tag-item">Đồ Uống</a>
+                                <a href="" class="tag-item">Đồ Ăn</a>
+                                <a href="" class="tag-item">Trà</a>
+                                <a href="" class="tag-item">Cà Phê</a>
+                                <a href="" class="tag-item">Sữa Chua Đặc Biệt An Nhiên</a>
+                                <a href="" class="tag-item">An Nhiên CÀ Phê</a>
+                                <a href="" class="tag-item">Espresoo</a>
+                                <a href="" class="tag-item">Nước Ép</a>
+                                <a href="" class="tag-item">Detox</a>
+                                <a href="" class="tag-item">Cà Phê Chồn</a>
+                                <a href="" class="tag-item">Đồ Uống</a>
+                                <a href="" class="tag-item">Capuchiano</a>
+                                <a href="" class="tag-item">Amenicano</a>
+                                <a href="" class="tag-item">Bánh Mỳ Sốt Vang</a>
+                                <a href="" class="tag-item">  Bánh flan</a>
+                                <a href="" class="tag-item"> Mousse Cake</a>
+                                <a href="" class="tag-item"> Bánh Tiramisu</a>
+                                <a href="" class="tag-item"> Bánh Muffin</a>
+                                <a href="" class="tag-item">  Đồ Ăn Vặt</a>
+                                <a href="" class="tag-item">  Bánh Panna Cotta</a>
+                                <a href="" class="tag-item">   Bánh Cookies</a>
+                                <a href="" class="tag-item">  Bánh-Cheese</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            
+        </div>
+        <div class="footer-area">
+            <div class="footer-service">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-lg-4 col-md-6 col-sm-12 footer-service-box">
+                            <div class="footer-icon-service"><span><i class="fas fa-paper-plane"></i></span></div>
+                            <div class="footer-content-serivce">
+                                <span>FREE SHIPPING</span>
+                                <span>ĐƠN HÀNG TRÊN 500.000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 footer-service-box">
+                            <div class="footer-icon-service"><span><i class="fas fa-sync"></i></span></div>
+                            <div class="footer-content-serivce">
+                                <span>ĐỔI TRẢ</span>
+                                <span>5 NGÀY ĐỔI TRẢ MIỄN PHÍ</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 footer-service-box">
+                            <div class="footer-icon-service"><span><i class="far fa-credit-card"></i></span></div>
+                            <div class="footer-content-serivce">
+                                <span>THANH TOÁN</span>
+                                <span>CHẤP NHẬN TẤT CẢ LOẠI THẺ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-infor">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-infor-item">
+                            <div class="footer-infor-title">
+                                <h5>An Nhiên cà Phê </h5>
+                                <p>Nét đẹp văn hóa người việt trong đương đại</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-infor-item">
+                            <div class="footer-infor-title">
+                                <h5>Hỗ Trợ Mua Hàng</h5>
+                                <div class="footer-list-service">
+                                    <a href=""><span><i class="fas fa-angle-right"></i></span> Hướng dẫn mua hàng</a>
+                                    <a href=""><span><i class="fas fa-angle-right"></i></span> Hướng dẫn tranh toán</a>
+                                    <a href=""><span><i class="fas fa-angle-right"></i></span> Phương thức vẫn
+                                        chuyển</a>
+                                    <a href=""><span><i class="fas fa-angle-right"></i></span> Tra cứu đơn hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-infor-item">
+                            <div class="footer-infor-title">
+                                <h5>Theo Dõi Chúng Tôi</h5>
+                                <div class="follow-icon">
+                                    <a href="https://www.facebook.com/ANCoffeeH"><span style="color: #3B5A9A;"><i
+                                        class="fab fa-facebook-square"></i></span></a>
+                                    <a href=""><span style="color: #42C8F4;"><i
+                                                class="fab fa-twitter-square"></i></span></a>
+                                    <a href=""><span style="color: #F8BC2E;"><i class="fab fa-skype"></i></span></a>
+                                    <a href=""><span style="color: #CE3633;"><i
+                                                class="fab fa-google-plus-square"></i></span></a>
+                                    <a href=""><span style="color: #040707;"><i class="fab fa-behance-square"></i>
+                                        </span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-infor-item">
+                            <div class="footer-infor-title">
+                                <h5>Thanh Toán</h5>
+                                <p>Chúng tôi chấp nhận thanh toán với tất cả loại thẻ</p>
+                                <div class="atm-icon">
+                                    <span style="color: #3B5A9A;"><i class="fab fa-cc-visa"></i></span>
+                                    <span style="color: #CE3633;"><i class="fab fa-cc-mastercard"></i></span>
+                                    <span style="color: #42C8F4;"><i class="fab fa-cc-paypal"></i></span>
+                                    <span style="color: #F8BC2E;"><i class="fab fa-cc-jcb"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="template/js/jquery-3.5.1.js"></script>
+    <script src="template/js/footer.js"></script>
+    <script src="template/js/header.js"></script>
+    <script src="lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

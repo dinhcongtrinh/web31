@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+    <link rel="stylesheet" href="template/css/header.css">
+    <link rel="stylesheet" href="template/css/main.css">
+    <link rel="stylesheet" href="template/css/footer.css">
+    <link rel="stylesheet" href="template/css/generalblog.css">
+    <link rel="stylesheet" href="template/css/detailblog.css">
+    <link rel="icon" href="img/logoannhien.jpg" type="image/gif">
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="lib/fontawesome-free-5.15.2-web/css/fontawesome.css">
+    <link rel="stylesheet" href="lib/fontawesome-free-5.15.2-web/css/brands.css">
+    <link rel="stylesheet" href="lib/fontawesome-free-5.15.2-web/css/solid.css">
+    <title>Chi Tiết Bài Viết</title>
+</head>
+
+<body>
+    <div id="hideContent" class=""></div>
+    <section class="navbar-left-box">
+        <div id="hideContent" class=""></div>
+        <div id="navbar-active" class="navbar-left">
+            <div class="visual">
+                <a id="btn-login" type="button" href="#" data-toggle="modal"
+                data-target="#exampleModal">
+                    <div class="avatar-box">
+                        <div class="avatar-icon"><span><i class="fas fa-user-circle"></i></span></div>
+                        <div class="avatar-content">
+                            <div>Đăng nhập</div>
+                            <div class="avatar-content-adver">Nhận thêm ưu đãi</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-left-content">
+                <div class="navbar-left-item">
+                    
+                    <a href="index.html" class="active-nav"><span><i class="fas fa-home"></i></span>Trang chủ</a>
+                </div>
+                <div>
+                    <div class="navbar-left-item">
+                        
+                        <a type="button" class="" href="#" id="btnDropdownMenuProduct">
+                            <span><i class="fas fa-list"></i></span>
+                            Sản Phẩm
+
+                            <span class="btn-dropdown"><i class="fas fa-angle-down"></i></span>
+                        </a>
+                    </div>
+                    <div id="dropdownMenuProduct" class="dropdown-menu-product">
+                        <a href="caphe.html">Cà Phê</a>
+                        <a href="douong.html">Đồ Uống</a>
+                        <a href="Theeat.html">Đồ Ăn</a>
+                        <a href="Express.html">Xuất khẩu</a>
+                    </div
+                </div>
+                <div class="navbar-left-item">
+                    
+                    <a href="blog.html"><span><i class="far fa-newspaper"></i></span>Tin Tức</a>
+                </div>
+                <div class="navbar-left-item">
+                    <span><i class="fas fa-map"></i></span>
+                    <a href="contact.html">Liên Hệ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="login">
+        <div class="modal fade modal-login" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header modal-login-header">
+                        <ul class="nav-select-action nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item nav-modal-custom" role="presentation">
+                                <a class="nav-link active " id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                    role="tab" aria-controls="pills-home" aria-selected="true">Đăng Nhập</a>
+                            </li>
+                            <li class="nav-item nav-modal-custom" role="presentation">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                    role="tab" aria-controls="pills-profile" aria-selected="false">Tạo Tài Khoản</a>
+                            </li>
+
+                        </ul>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <form class="form-login">
+                                    <div class="form-group row">
+                                        <label for="inputEmail3" class="col-sm-3 col-form-label">Email / SĐT</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="inputEmailLogin"
+                                                placeholder="Nhập Email hoặc Số điện thoại">
+                                            <span id="errorInputEmailLogin" class="error-message"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Mật Khẩu</label>
+                                        <div class="col-sm-9">
+                                            <input type="password" class="form-control" id="inputPasswordLogin"
+                                                placeholder="Mật khẩu từ 9 đến 32 ký tự">
+                                            <span id="errorInputPassLogin" class="error-message"></span>
+                                        </div>
+                                    </div>
+                                    </fieldset>
+                                    <div class="form-group row">
+                                        <label for="inputPassword3" class="col-sm-3 col-form-label"></label>
+                                        <div class="col-sm-9">
+                                            <button type="submit" id="btnSubmitLogin"
+                                                class="my-2 btn-login btn w-100">Đăng nhập</button>
+                                            <div>Quên mật khẩu? Nhấn tại <a href="#"> đây</a></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group row my-4">
+                                        <div class="col-sm-3"></div>
+                                        <div class="col-sm-9">
+
+                                            <button type="button" class="my-2 btn-login-google btn w-100">Đăng nhập bằng
+                                                Google++</button>
+                                            <button type="button" class="my-2 btn-login-facebook btn w-100">Đăng nhập
+                                                bằng Facebook</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <form class="form-login">
+                                    <div class="form-group row">
+                                        <label for="inputEmail3" class="col-sm-3 col-form-label">Họ Tên</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" required class="form-control" id="inputNameRegis"
+                                                placeholder="Nhập họ tên">
+                                                <span id="errorInputNameRegis" class="error-message"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword3" class="col-sm-3 col-form-label">SĐT</label>
+                                        <div class="col-sm-9">
+                                            <input type="number" required class="form-control" id="inputPhoneRegis"
+                                                placeholder="Nhập số điện thoại">
+                                            <span id="errorInputPhoneRegis" class="error-message"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Email</label>
+                                        <div class="col-sm-9">
+                                            <input type="email" required class="form-control" id="inputEmailRegis"
+                                                placeholder="Nhập email">
+                                            <span id="errorInputEmailRegis" class="error-message"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Mật Khẩu</label>
+                                        <div class="col-sm-9">
+                                            <input type="password" required class="form-control" id="inputPasswordRegis"
+                                                placeholder="Mật khẩu từ 9 đến 32 ký tự">
+                                            <span id="errorInputPassRegis" class="error-message"></span>
+                                        </div>
+                                    </div>
+                                    <fieldset class="form-group row">
+                                        <legend class="col-form-label col-sm-3 float-sm-left pt-0">Giới Tính</legend>
+                                        <div class="col-sm-9">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" name="sex" type="radio"
+                                                    id="inlineCheckbox1" value="option1" checked>
+                                                <label class="form-check-label" for="inlineCheckbox1">Nam</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" name="sex" type="radio"
+                                                    id="inlineCheckbox2" value="option2">
+                                                <label class="form-check-label" for="inlineCheckbox2">Nữ</label>
+                                            </div>
+
+                                        </div>
+                                    </fieldset>
+                                    <div class="form-group row">
+                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Ngày Sinh</label>
+                                        <div class="col-sm-3 my-1">
+                                            <label class="mr-sm-2 sr-only" for="formSigninSlectDay">Ngày</label>
+                                            <select class="custom-select mr-sm-2" id="formSigninSlectDay" >
+                                                <option selected value="-1">Ngày</option>
+
+                                            </select>
+                                            
+                                        </div>
+                                        <div class="col-sm-3 my-1">
+                                            <label class="mr-sm-2 sr-only" for="formSigninSlectMonth">Tháng</label>
+                                            <select class="custom-select mr-sm-2" id="formSigninSlectMonth" >
+                                                <option selected value="-1">Tháng</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-3 my-1">
+                                            <label class="mr-sm-2 sr-only" for="formSigninSlectYear">Năm</label>
+                                            <select class="custom-select mr-sm-2" id="formSigninSlectYear" >
+                                                <option selected value="-1">Năm</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-3"></div>
+                                        <span id="errorSelectDate" class="error-message col-sm-9" style="padding-left:1rem ;"></span>
+                                    </div>
+                                    <div class="form-group row my-4">
+                                        <div class="col-sm-3"></div>
+                                        <div class="col-sm-9">
+                                            <button type="submit" id="btnSubmitRegis" class="my-2 btn-login btn w-100">Tạo tài
+                                                khoản</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="" class="search">
+        <div id="hideContentSearch" class=""></div>
+        <div class="search-box" id="searchBox">
+            <form action="" class="form-seach" id="form-search">
+                <input type="text" name="" class="form-input-search" id="">
+                <button type="submit" class="btn-submit-search"><span><i class="fas fa-search"></i></span></button>
+                <button type="button" class="btnCancel">X</button>
+            </form>
+            <div class="resSearch">
+
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <!-- <div class="header-wellcome">
+
+            <div class="text-header">
+                <p>Wellcome to Men's Shop !</p>
+            </div>
+
+        </div> -->
+        <div class="" id="navbarFixed">
+            <nav class="navbar navbar-expand-lg navbar-light container">
+                <button id="btn-active-nav" class="navbar-toggler" type="button" data-toggle="collapse" data-target=""
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="img/logoannhien.jpg" alt=""></a>
+                <div class="header-nav-card">
+                    <button class="btn-search" id="btnSearchNav" type="button" style="outline: none"><span><i
+                                class="fa fa-search" aria-hidden="true"></i></span></button>
+                    <a href=""><span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
+
+                </div>
+                <div class="nav-search-box" id="navSearchBox">
+                    <div class="nav-icon-search"><span><i class="fa fa-search" aria-hidden="true"></i></span></div>
+                    <input type="text" class="w-100 form-control" placeholder="Bạn muốn tìm gì ?">
+                </div>
+                <div class="collapse navbar-collapse main-menu" id="navbarNav">
+                    <div class="navbar-nav navbar-menu">
+                        <div class="nav-item"><a href="index.html">Trang chủ</a></div>
+                        <div class="nav-item dropdown">
+                            <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Sản Phẩm
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a href="caphe.html">Cà Phê</a>
+                                <a href="douong.html">Đồ Uống</a>
+                                <a href="Theeat.html">Đồ Ăn</a>
+                                <a href="Express.html">Xuất khẩu</a>
+                            </div>
+                        </div>
+                        <div class="nav-item active-nav"><a href="blog.html" class="">Tin Tức</a>
+
+                        </div>
+
+                        <div class="nav-item"><a href="contact.html">Liên Hệ</a></div>
+                    </div>
+                    <ul class="navbar-nav navbar-icon ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" type="button" id="btnSearch"><span><i class="fa fa-search"
+                                        aria-hidden="true"></i></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" type="button" href="#" data-toggle="modal"
+                                data-target="#exampleModal"><span><i class="fa fa-user"
+                                        aria-hidden="true"></i></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html"><span class=""><i class="fa fa-shopping-cart"
+                                        aria-hidden="true"></i></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="banner-current-page box-element">
+                <img src="img/banerhatcf.jpg" alt="">
+                <div class="current-page-box">
+                    <h3 class="title-banner-page">Tin Tức</h3>
+                    <div class="current-page-box-link">
+                        <a href="index.html" class="link-previous-page">Trang chủ ></a>
+                        <a href="blog.html" class="link-previous-page">Tin Tức ></a>
+                        <span class="current-page"> Lợi ích khi uống cà phê</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-12 box-element content-blog-area">
+                    <div class="content-blog">
+                        <div class="main-img-blog">
+                            <img src="./img/caphe-tra.jpg" alt="">
+                        </div>
+                        <div class="main-content">
+                            <h2 class="title-blog">
+                             Thông tin sức khỏe Dinh dưỡng
+                                Cà phê và trà </h2>
+                            <div class="infor-blog">
+                                <span><i class="fas fa-calendar-alt"></i> 01/01/2021</span>
+                                <span><i class="fas fa-user"></i> Minh Nguyễn</span> |
+                                <span>2 bình luận</span>
+                            </div>
+                            <div>
+                                <p class="blog-para">Cà phê và trà là một trong những đồ uống phổ biến nhất thế giới, với trà đen là loại được sử dụng nhiều nhất, chiếm tới 78% tổng sản lượng tiêu thụ trà. Trong khi cà phê và trà đều được cho là cung cấp một số lợi ích sức khỏe, một số điểm khác nhau sẽ được chỉ ra trong bài so sánh dưới đây.
+
+                                </p>
+                                <h2 class="title-blog">1. Hàm lượng caffein</h2>
+                               
+                                <p class="blog-para">
+                                    Nghiên cứu cho thấy rằng caffeine là loại chất kích thích được tiêu thụ nhiều nhất trên thế giới. Loại chất này có mặt trong nhiều loại đồ uống phổ biến, bao gồm cà phê và trà, được biết đến với cả tác dụng có lợi và có hại cho sức khỏe con người.
+
+Mặc dù hàm lượng caffeine có thể thay đổi tùy thuộc vào thời gian pha chế, kích cỡ khẩu phần hoặc phương pháp pha chế, cà phê thường có chứa gấp đôi lượng cafein so với một khẩu phần trà tương tự.
+
+Lượng caffeine được coi là an toàn cho hoạt động tiêu dùng của con người là 400 mg mỗi ngày. Một cốc cà phê 240 ml chứa trung bình 95 mg cafein, so với 47 mg trong cùng một khẩu phần trà đen.
+
+Mặc dù các nhà khoa học chủ yếu tập trung vào cà phê khi nghiên cứu tác dụng tích cực của caffeine, cả hai loại đồ uống - mặc dù có chứa lượng chất này khác nhau - có thể mang lại lợi ích sức khỏe tương đối giống nhau.
+
+Tiêu thụ cafein có thể làm giảm nguy cơ mắc một số bệnh mãn tính, cải thiện tâm trạng giúp tinh thần minh mẫn. Caffeine hoạt động như một chất kích thích mạnh mẽ cho hệ thần kinh trung ương, đó cũng là lý do tại sao hợp chất này được coi là một chất để tăng cường hiệu suất trong thể thao. Một đánh giá trên 40 nghiên cứu đã xác định rằng caffeine giúp cải thiện 12% sức bền.
+                                </p>
+
+                                <div class="img-samll">
+                                    <img src="./img/imgtra/oxy-hoa.jpg" alt="">
+                                </div>
+                                <h2 class="title-blog">2. Chất chống oxy hóa</h2>
+                                <p class="blog-para">
+                                    Chất chống oxy hóa có tác dụng bảo vệ cơ thể để chống lại các tổn thương gây ra từ gốc tự do, có thể giúp ngăn ngừa sự phát triển của một số bệnh mãn tính.
+
+                                    Cả trà và cà phê đều chứa chất chống oxy hóa, chủ yếu là polyphenol, góp phần tạo nên hương vị đặc trưng và tăng cường sức khỏe. Nhiều nhóm polyphenol có trong trà và cà phê như Theaflavins, thearubigins và catechin là những chất chính trong trà đen, trong khi cà phê rất giàu flavonoid và axit chlorogenic (CGA).
+                                    
+                                    Một nghiên cứu trong ống nghiệm gần đây đã phát hiện ra rằng theaflavin và thearubigins có thể ức chế sự phát triển của tế bào ung thư phổi và ruột kết, sau đó tiêu diệt hẳn các tế bào này. Các nghiên cứu trên các tế bào ung thư bạch cầu cho thấy kết quả tương tự, cho thấy trà đen có đặc tính chống ung thư.
+                                    
+                                    Mặt khác, các nghiên cứu trong ống nghiệm về đặc tính chống ung thư của cà phê đã phát hiện ra rằng hàm lượng CGA của nó hoạt động như một hợp chất khiến ức chế mạnh mẽ sự phát triển của tế bào ung thư, đặc biệt là ung thư đường tiêu hóa và gan.
+                                    
+                                    Các nghiên cứu dài hạn ở người cũng đã cho thấy tác dụng của cà phê và trà lên việc bảo vệ cơ thể chống lại các loại ung thư khác, chẳng hạn như ung thư vú, ruột kết, bàng quang và trực tràng.
+                                </p>
+                                
+        
+                                
+                                <div class="row footer-content-blog">
+                                    <div class="col-md-6 col-sm-6 p-0">
+                                        <div class="blog-key-world">
+                                            <span>TỪ KHÓA: </span>
+                                            <span>Xu hướng</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 p-0">
+                                        <div class="icon-link-social">
+                                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                                            <a href=""><i class="fab fa-instagram"></i></a>
+                                            <a href=""><i class="fab fa-pinterest-p"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-area">
+                        <h3 class="heading-blog heading-comment">Bình Luận</h3>
+                        <div class="mb-5">
+                            <div class="user-comment">
+                                <div class="img-of-user">
+                                    <img src="img/imgOfUser/EC0nvJEUwAEQOnZ.jpg" alt="">
+                                </div>
+                                <div class="content-comment">
+                                    <div class="infor-user">
+                                        <span class="name-user">Minh Nguyễn</span>
+                                        <span class="time-post">14-01-2021</span>
+                                    </div>
+                                    <p>
+                                        Mình thích uống cà phê vì nó rất sảng khoái tinh thần
+                                    </p>
+                                    <button class="btn-reply-comment">Trả Lời</button>
+                                </div>
+                            </div>
+                            <div class="user-comment">
+                                <div class="img-of-user">
+                                    <img src="img/imgOfUser/EC0nvJEUwAEQOnZ.jpg" alt="">
+                                </div>
+                                <div class="content-comment">
+                                    <div class="infor-user">
+                                        <span class="name-user">Minh Nguyễn</span>
+                                        <span class="time-post">14-01-2021</span>
+                                    </div>
+                                    <p>
+                                        Tôi thường uống cà phê hàng ngày
+                                    </p>
+                                    <button class="btn-reply-comment">Trả Lời</button>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="heading-blog heading-comment">Để Lại Bình Luận</h3>
+                        <form action="">
+                            
+                                <div class="user-comment comment-box" style="border: none;">
+                                    <div class="img-of-user">
+                                        <img src="img/imgOfUser/EC0nvJEUwAEQOnZ.jpg" alt="">
+                                    </div>
+                                    <div class="content-comment box-input-comment">
+                                        
+                                       <textarea name="" id="" cols="30" rows="3" class="form-control input-comment" placeholder="Nội Dung Bình Luận"></textarea>
+                                       <div class="btn-post"><button class="btn btn-primary">Đăng</button></div>
+                                    </div>
+                                    
+                                </div>
+                                
+                        </form>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 box-element">
+
+                    <div class="blog-sidebar-content">
+                        <form action="">
+                            <div class="form-group blog-form-search">
+                                <input type="text" placeholder="Tìm kiếm bài viết" class="form-control">
+                                <button type="submit" class="btn-submit-search"><span><i
+                                            class="fas fa-search"></i></span></button>
+                            </div>
+                        </form>
+
+                        <div class="blog-category-filter">
+                            <h3 class="heading-blog">Dịch vụ Của Hàng</h3>
+                            <ul class="list-category">
+                                <li><a href=""><span><i class="fas fa-angle-right"></i></span> Phòng Họp </a></li>
+                                <li><a href=""><span><i class="fas fa-angle-right"></i></span> Đồ Uống</a></li>
+                                <li><a href=""><span><i class="fas fa-angle-right"></i></span> Đồ Ăn</a></li>
+                                <li><a href=""><span><i class="fas fa-angle-right"></i></span> Wifi</a></li>
+                            </ul>
+                        </div>
+                        <div class="blog-category-filter">
+                            <h3 class="heading-blog">Phát Triển Thương Hiệu</h3>
+                            <ul class="list-category">
+                                <li><a href=""><span><i class="fas fa-angle-right"></i></span> Hợp Tác Đầu Tư </a></li>
+                                <li><a href=""><span><i class="fas fa-angle-right"></i></span> Chuyển Nhượng Của Hàng</a></li>
+                                <li><a href=""><span><i class="fas fa-angle-right"></i></span> Kế Hoạch Marketting</a></li>
+                                <li><a href=""><span><i class="fas fa-angle-right"></i></span> Xuất Khẩu Sản Phẩm</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="post-popular">
+                            <h3 class="heading-blog">Họp Nhóm Tại Cửa Hàng An Nhiên</h3>
+                            <div class="post-popular-card">
+                                <div class="post-img">
+                                    <img src="./img/imgcuahang/cửahang.jpg" alt="">
+                                </div>
+                                <div class="post-content">
+                                    <h5><a href="">Nhóm Bảo Hiểm Manulife</a></h5>
+                                    <div class="post-time"><span><i class="fas fa-calendar-alt"></i></span> 25/02/2021
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="post-popular-card">
+                                <div class="post-img">
+                                    <img src="./img/imgcuahang/cong-nghe.jpg" alt="">
+                                </div>
+                                <div class="post-content">
+                                    <h5><a href="">Nhóm Công Nghệ Số</a></h5>
+                                    <div class="post-time"><span><i class="fas fa-calendar-alt"></i></span> 28/01/2021
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="post-popular-card">
+                                <div class="post-img">
+                                    <img src="./img/imgcuahang/hopnhom.jpg" alt="">
+                                </div>
+                                <div class="post-content">
+                                    <h5><a href="">Nhóm Quảng Cáo Sản Phẩm Sách Dạy Trẻ Nhỏ</a></h5>
+                                    <div class="post-time"><span><i class="fas fa-calendar-alt"></i></span> 01/01/2021
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="post-popular-card">
+                                <div class="post-img">
+                                    <img src="./img/imgcuahang/nhom-bh-manulife.webp" alt="">
+                                </div>
+                                <div class="post-content">
+                                    <h5><a href="">Tập Đoàn Bất Động Sản Thiên Khôi Dạy Kỹ Năng</a></h5>
+                                    <div class="post-time"><span><i class="fas fa-calendar-alt"></i></span> 01/01/2021
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="post-tag">
+                            <h3 class="heading-blog">Tag</h3>
+                            <div class="tag-box">
+                                < <a href="" class="tag-item">Abrica</a>
+                                <a href="" class="tag-item">Robusta</a></a>
+                                <a href="" class="tag-item">Đồ Uống</a>
+                                <a href="" class="tag-item">Đồ Ăn</a>
+                                <a href="" class="tag-item">Trà</a>
+                                <a href="" class="tag-item">Cà Phê</a>
+                                <a href="" class="tag-item">Sữa Chua Đặc Biệt An Nhiên</a>
+                                <a href="" class="tag-item">An Nhiên CÀ Phê</a>
+                                <a href="" class="tag-item">Espresoo</a>
+                                <a href="" class="tag-item">Nước Ép</a>
+                                <a href="" class="tag-item">Detox</a>
+                                <a href="" class="tag-item">Cà Phê Chồn</a>
+                                <a href="" class="tag-item">Đồ Uống</a>
+                                <a href="" class="tag-item">Capuchiano</a>
+                                <a href="" class="tag-item">Amenicano</a>
+                                <a href="" class="tag-item">Bánh Mỳ Sốt Vang</a>
+                                <a href="" class="tag-item">  Bánh flan</a>
+                                <a href="" class="tag-item"> Mousse Cake</a>
+                                <a href="" class="tag-item"> Bánh Tiramisu</a>
+                                <a href="" class="tag-item"> Bánh Muffin</a>
+                                <a href="" class="tag-item">  Đồ Ăn Vặt</a>
+                                <a href="" class="tag-item">  Bánh Panna Cotta</a>
+                                <a href="" class="tag-item">   Bánh Cookies</a>
+                                <a href="" class="tag-item">  Bánh-Cheese</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            
+        </div>
+        <div class="footer-area">
+            <div class="footer-service">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-lg-4 col-md-6 col-sm-12 footer-service-box">
+                            <div class="footer-icon-service"><span><i class="fas fa-paper-plane"></i></span></div>
+                            <div class="footer-content-serivce">
+                                <span>FREE SHIPPING</span>
+                                <span>ĐƠN HÀNG TRÊN 500.000</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 footer-service-box">
+                            <div class="footer-icon-service"><span><i class="fas fa-sync"></i></span></div>
+                            <div class="footer-content-serivce">
+                                <span>ĐỔI TRẢ</span>
+                                <span>5 NGÀY ĐỔI TRẢ MIỄN PHÍ</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 footer-service-box">
+                            <div class="footer-icon-service"><span><i class="far fa-credit-card"></i></span></div>
+                            <div class="footer-content-serivce">
+                                <span>THANH TOÁN</span>
+                                <span>CHẤP NHẬN TẤT CẢ LOẠI THẺ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-infor">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-infor-item">
+                            <div class="footer-infor-title">
+                                <h5>An Nhiên cà Phê </h5>
+                                <p>Nét đẹp văn hóa người việt trong đương đại</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-infor-item">
+                            <div class="footer-infor-title">
+                                <h5>Hỗ Trợ Mua Hàng</h5>
+                                <div class="footer-list-service">
+                                    <a href=""><span><i class="fas fa-angle-right"></i></span> Hướng dẫn mua hàng</a>
+                                    <a href=""><span><i class="fas fa-angle-right"></i></span> Hướng dẫn tranh toán</a>
+                                    <a href=""><span><i class="fas fa-angle-right"></i></span> Phương thức vẫn
+                                        chuyển</a>
+                                    <a href=""><span><i class="fas fa-angle-right"></i></span> Tra cứu đơn hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-infor-item">
+                            <div class="footer-infor-title">
+                                <h5>Theo Dõi Chúng Tôi</h5>
+                                <div class="follow-icon">
+                                    <a href="https://www.facebook.com/ANCoffeeH"><span style="color: #3B5A9A;"><i
+                                        class="fab fa-facebook-square"></i></span></a>
+                                    <a href=""><span style="color: #42C8F4;"><i
+                                                class="fab fa-twitter-square"></i></span></a>
+                                    <a href=""><span style="color: #F8BC2E;"><i class="fab fa-skype"></i></span></a>
+                                    <a href=""><span style="color: #CE3633;"><i
+                                                class="fab fa-google-plus-square"></i></span></a>
+                                    <a href=""><span style="color: #040707;"><i class="fab fa-behance-square"></i>
+                                        </span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-infor-item">
+                            <div class="footer-infor-title">
+                                <h5>Thanh Toán</h5>
+                                <p>Chúng tôi chấp nhận thanh toán với tất cả loại thẻ</p>
+                                <div class="atm-icon">
+                                    <span style="color: #3B5A9A;"><i class="fab fa-cc-visa"></i></span>
+                                    <span style="color: #CE3633;"><i class="fab fa-cc-mastercard"></i></span>
+                                    <span style="color: #42C8F4;"><i class="fab fa-cc-paypal"></i></span>
+                                    <span style="color: #F8BC2E;"><i class="fab fa-cc-jcb"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="template/js/jquery-3.5.1.js"></script>
+    <script src="template/js/footer.js"></script>
+    <script src="template/js/header.js"></script>
+    <script src="lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
