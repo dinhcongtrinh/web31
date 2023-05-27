@@ -15,9 +15,13 @@
     font-size: 0.7rem;
     margin: 0;
 }
-.container-main,
+.container-main  {
+    display: flex;
+    flex-direction: column-reverse;
+}
 header {
     background-color: #fff;
+
 }
 
 .navbar-icon li a span {

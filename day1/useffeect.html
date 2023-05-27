@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="secsion">
+        <h1>Tìm hiểu kiến thức</h1>
+        <h2>1. Cú pháp, cách sử dụng, các trường hợp sử dụng useEffect
+        </h2>
+        <h2>2. Các lưu ý, các lỗi thường gặp</h2>
+        <h2>3. Các hook khác (useRef, useContext, useReducer, …)</h2>
+        <h4>a. Cú pháp useffeect </h4>
+        <p>#syntax
+            useEffect(effectFunction, arrayDependencies)</p>
+        <h4>b. mục đích của useffeect</h4>   
+        <h5>Điều đó có nghĩa là: mục đích useEffect để quản lý vòng đời của của một component và nó phục vụ chúng ta sử dụng trong function component thay vì các lifecycle như trước đây trong class component.</p> 
+        <h5>Lifecycle method trong class component thực sự rất quan trọng, đôi khi chúng ta muốn fetch dữ liệu từ API khi rendering 1 component, đôi khi chúng ta muốn thực hiện những action cụ thể khi component update,... 2 Methods được cho là quan trọng nhất chính là componentDidMount và componentDidUpdate.</h5>
+        <h5>useState cho phép chúng ta sử dụng state trong functional components. useEffect cho phép chúng ta sử lý logic trong lifecycle methods. Từ cái tên useEffect chắc chúng ta cũng hiểu được hàm sẽ được gọi mỗi khi có gì đó ảnh hưởng đến components của bạn. Và thực sự nó giống với định nghĩa của componentDidMount và componentDidUpdate.</h5>
+        <h4>c.  Cách sử dụng useEffect() trong nhiều trường hợp</h4>
+        <h5>First step: Khởi tạo states</h5>
+        <h5>//import React, {useState} from 'react';
+
+            export const EffectDemo = () => {
+                //State
+                const [fullName, setFullName] = useState({name: 'name', familyName: 'family'});
+                const [title,setTitle] = useState('useEffect() in Hooks');
+                
+                
+                return(
+                    <div>
+                        <h1>Title: {title}</h1>
+                        <h3>Name: {fullName.name}</h3>
+                        <h3>Family Name: {fullName.familyName}</h3>
+                    </div>
+                );
+            };</h5>//
+            <h5>Second Step: khai báo useEffect()</h5>
+            <h5>//import React, {useEffect, useState} from 'react';
+
+                export const EffectDemo = () => {
+                    //State
+                    const [fullName, setFullName] = useState({name: 'name', familyName: 'family'});
+                    const [title,setTitle] = useState('useEffect() in Hooks');
+                
+                    //useEffect
+                    useEffect(() => {
+                        setFullName({name:'TrungHC',familyName: 'HCT'});
+                    });
+                
+                    return(
+                        <div>
+                            <h1>Title: {title}</h1>
+                            <h3>Name: {fullName.name}</h3>
+                            <h3>Family Name: {fullName.familyName}</h3>
+                        </div>
+                    );
+                };</h5>//
+            <h4>useffeect đuọc gọi mỗi khi components thay đổi</h4>
+            <h5>Như vậy đúng như những gì chúng ta hiểu, useEffect sẽ được gọi mỗi khi components thay đổi, tuy nhiên ở đây thì đó không phải là thứ mà chúng ta mong muốn, hiện tại useEffect đang là một method giống như hàm componentDidUpdate vậy. Để cho giống với componentDidUpdate thực sự thì chúng ta cũng có thể điều khiển hàm useEffect bằng câu lệnh điều kiện, nó chính là tham số thứ 2 của hàm useEffect(). Tham số thứ 2 của useEffect là một mảng, mảng này cho biết rõ chỉ gọi useEffect() khi giá trị phần tử trong mảng thay đổi. Chẳng hạn:</h5>    
+    </div>
+</body>`    `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   
+</html>
